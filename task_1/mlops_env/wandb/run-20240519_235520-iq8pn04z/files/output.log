@@ -1,0 +1,118 @@
+[32m[I 2024-05-19 23:55:22,046][39m A new study created in memory with name: no-name-282ebeb1-2f31-4faf-a243-e6c62d2aa55b
+[33m[W 2024-05-19 23:55:22,254][39m Trial 0 failed with parameters: {} because of the following error: KeyboardInterrupt().
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 150, in objective
+    sanity_checks(digits)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 94, in sanity_checks
+    plt.subplot(1, 5, index + 1)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1452, in subplot
+    ax = fig.add_subplot(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/figure.py", line 782, in add_subplot
+    ax = projection_class(self, *args, **pkw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 678, in __init__
+    self.clear()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 1388, in clear
+    self.__clear()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 1304, in __clear
+    self.grid(False)  # Disable grid on init to use rcParameter
+    ^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3196, in grid
+    self.xaxis.grid(visible, which=which, **kwargs)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 1697, in grid
+    self.set_tick_params(which='major', **gridkw)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 973, in set_tick_params
+    for tick in self.majorTicks:
+                ^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 587, in __get__
+    instance.majorTicks.append(tick)
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 586, in __get__
+    tick = instance._get_tick(major=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 1562, in _get_tick
+    return self._tick_class(self.axes, 0, major=major, **tick_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 413, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 178, in __init__
+    self.label1 = mtext.Text(
+                  ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/text.py", line 139, in __init__
+    self._reset_visual_defaults(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/text.py", line 189, in _reset_visual_defaults
+    self.set_linespacing(linespacing)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/text.py", line 1037, in set_linespacing
+    _api.check_isinstance(Real, spacing=spacing)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/_api/__init__.py", line 64, in check_isinstance
+    def check_isinstance(types, /, **kwargs):
+KeyboardInterrupt
+[33m[W 2024-05-19 23:55:22,259][39m Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 197, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 189, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 150, in objective
+    sanity_checks(digits)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 94, in sanity_checks
+    plt.subplot(1, 5, index + 1)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1452, in subplot
+    ax = fig.add_subplot(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/figure.py", line 782, in add_subplot
+    ax = projection_class(self, *args, **pkw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 678, in __init__
+    self.clear()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 1388, in clear
+    self.__clear()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 1304, in __clear
+    self.grid(False)  # Disable grid on init to use rcParameter
+    ^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 3196, in grid
+    self.xaxis.grid(visible, which=which, **kwargs)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 1697, in grid
+    self.set_tick_params(which='major', **gridkw)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 973, in set_tick_params
+    for tick in self.majorTicks:
+                ^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 587, in __get__
+    instance.majorTicks.append(tick)
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 586, in __get__
+    tick = instance._get_tick(major=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 1562, in _get_tick
+    return self._tick_class(self.axes, 0, major=major, **tick_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 413, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/axis.py", line 178, in __init__
+    self.label1 = mtext.Text(
+                  ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/text.py", line 139, in __init__
+    self._reset_visual_defaults(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/text.py", line 189, in _reset_visual_defaults
+    self.set_linespacing(linespacing)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/text.py", line 1037, in set_linespacing
+    _api.check_isinstance(Real, spacing=spacing)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/matplotlib/_api/__init__.py", line 64, in check_isinstance
+    def check_isinstance(types, /, **kwargs):
+KeyboardInterrupt

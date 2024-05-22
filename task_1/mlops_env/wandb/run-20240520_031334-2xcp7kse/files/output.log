@@ -1,0 +1,54 @@
+
+[32m[I 2024-05-20 03:13:35,915][39m A new study created in memory with name: no-name-b7f3d755-6cdb-48a5-b1d4-a56b5ff751b4
+(1797, 64)
+(1797,)
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 03:13:43,154][39m Trial 0 finished with value: 0.9585567151380063 and parameters: {'penalty': 'elasticnet', 'inverse_of_regularization_strength': 0.6522591466263786, 'fit_intercept': True, 'intercept_scaling': 0.7776811059207587, 'l1_ratio': 0.039050846530675365}. Best is trial 0 with value: 0.9585567151380063.
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 03:13:44,404][39m Trial 1 finished with value: 0.9541411395788136 and parameters: {'penalty': 'l2', 'solver_l2': 'liblinear', 'inverse_of_regularization_strength': 0.33240538750011184, 'fit_intercept': True, 'intercept_scaling': 0.28213604251884783}. Best is trial 0 with value: 0.9585567151380063.
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 03:13:45,688][39m Trial 2 finished with value: 0.9521737364146021 and parameters: {'penalty': 'l1', 'inverse_of_regularization_strength': 0.30379377309758543, 'fit_intercept': False, 'intercept_scaling': 0.5611179195129076}. Best is trial 0 with value: 0.9585567151380063.
+[33m[W 2024-05-20 03:13:45,911][39m Trial 3 failed with parameters: {'penalty': 'none', 'inverse_of_regularization_strength': 0.33491247029169957, 'fit_intercept': True, 'intercept_scaling': 0.9951171974103299} because of the following error: InvalidParameterError("The 'penalty' parameter of LogisticRegression must be a str among {'elasticnet', 'l1', 'l2'} or None. Got 'none' instead.").
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 179, in objective
+    logisticRegr.fit(x_train, y_train)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/base.py", line 1467, in wrapper
+    estimator._validate_params()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'penalty' parameter of LogisticRegression must be a str among {'elasticnet', 'l1', 'l2'} or None. Got 'none' instead.
+[33m[W 2024-05-20 03:13:45,913][39m Trial 3 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 203, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 195, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 179, in objective
+    logisticRegr.fit(x_train, y_train)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/base.py", line 1467, in wrapper
+    estimator._validate_params()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'penalty' parameter of LogisticRegression must be a str among {'elasticnet', 'l1', 'l2'} or None. Got 'none' instead.

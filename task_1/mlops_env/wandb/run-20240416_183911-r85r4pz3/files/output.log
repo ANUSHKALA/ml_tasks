@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 170, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 161, in main
+    study = optuna.create_study(direction="maximize")
+            ^^^^^^
+NameError: name 'optuna' is not defined

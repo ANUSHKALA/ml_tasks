@@ -1,0 +1,74 @@
+{
+    "os": "Linux-6.5.0-35-generic-x86_64-with-glibc2.35",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-05-18T06:30:58.507318",
+    "startedAt": "2024-05-18T06:30:56.670632",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py",
+    "codePathLocal": "mlops_task.py",
+    "codePath": "mlops_task.py",
+    "host": "anushka-HP-Pavilion-Laptop-15-eg0xxx",
+    "username": "anushka",
+    "executable": "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2060.901375,
+        "min": 400.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2642.578,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3247.39,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3021.112,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3230.844,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3047.512,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3317.699,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3302.932,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2475.352,
+            "min": 400.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 160.28170013427734,
+            "used": 124.13537979125977
+        }
+    },
+    "memory": {
+        "total": 15.38083267211914
+    }
+}

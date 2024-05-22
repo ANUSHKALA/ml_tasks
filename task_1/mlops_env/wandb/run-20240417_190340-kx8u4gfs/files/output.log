@@ -1,0 +1,68 @@
+
+[32m[I 2024-04-17 19:03:44,403][39m A new study created in memory with name: no-name-344cd2c1-167c-41a1-99b6-7ff4d90da799
+[32m[I 2024-04-17 19:03:46,799][39m Trial 0 finished with value: 0.9521737364146021 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.3200840848735271, 'fit_intercept': True, 'intercept_scaling': 0.6751260160454506}. Best is trial 0 with value: 0.9521737364146021.
+[[37  0  0  0  0  0  0  0  0  0]
+ [ 0 40  0  0  0  0  1  0  2  0]
+ [ 0  0 42  2  0  0  0  0  0  0]
+ [ 0  0  0 43  0  0  0  0  1  1]
+ [ 0  0  0  0 37  0  0  1  0  0]
+ [ 0  1  0  0  0 47  0  0  0  0]
+ [ 0  1  0  0  0  0 51  0  0  0]
+ [ 0  1  0  0  1  0  0 46  0  0]
+ [ 0  3  1  0  0  1  0  0 43  0]
+ [ 0  0  0  1  0  1  0  0  3 42]]
+[32m[I 2024-04-17 19:03:48,034][39m Trial 1 finished with value: 0.9520134800043456 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.3606241195469533, 'fit_intercept': False, 'intercept_scaling': 0.22613553014502}. Best is trial 0 with value: 0.9521737364146021.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+[[37  0  0  0  0  0  0  0  0  0]
+ [ 0 40  0  0  0  0  1  0  2  0]
+ [ 0  0 42  2  0  0  0  0  0  0]
+ [ 0  0  1 43  0  0  0  0  0  1]
+ [ 0  0  0  0 37  0  0  1  0  0]
+ [ 0  1  0  0  0 47  0  0  0  0]
+ [ 0  0  0  0  0  0 52  0  0  0]
+ [ 0  1  0  0  1  0  0 46  0  0]
+ [ 0  3  1  0  0  1  0  0 42  1]
+ [ 0  0  0  1  0  1  0  0  3 42]]
+[32m[I 2024-04-17 19:03:48,994][39m Trial 2 finished with value: 0.9585567151380063 and parameters: {'penality': 'l2', 'solver_l2': 'lbfgs', 'inverse_of_regularization_strength': 0.22105059684668366, 'fit_intercept': False, 'intercept_scaling': 0.7008778564906722}. Best is trial 2 with value: 0.9585567151380063.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[[37  0  0  0  0  0  0  0  0  0]
+ [ 0 40  0  0  0  0  1  0  1  1]
+ [ 0  0 42  2  0  0  0  0  0  0]
+ [ 0  0  0 43  0  0  0  0  1  1]
+ [ 0  0  0  0 37  0  0  1  0  0]
+ [ 0  0  0  0  0 46  0  0  0  2]
+ [ 0  1  0  0  0  0 51  0  0  0]
+ [ 0  0  0  1  1  0  0 46  0  0]
+ [ 0  3  1  0  0  0  0  0 44  0]
+ [ 0  0  0  0  0  1  0  0  1 45]]
+[32m[I 2024-04-17 19:03:51,160][39m Trial 3 finished with value: 0.9608294424107336 and parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.21237135021128362, 'fit_intercept': True, 'intercept_scaling': 0.3909532482592044, 'l1_ratio': 0.5485067128094816}. Best is trial 3 with value: 0.9608294424107336.
+[[37  0  0  0  0  0  0  0  0  0]
+ [ 0 40  0  0  0  0  1  0  1  1]
+ [ 0  0 43  1  0  0  0  0  0  0]
+ [ 0  0  1 43  0  0  0  0  0  1]
+ [ 0  0  0  0 37  0  0  1  0  0]
+ [ 0  0  0  0  0 46  0  0  0  2]
+ [ 0  1  0  0  0  0 51  0  0  0]
+ [ 0  0  0  1  1  0  0 46  0  0]
+ [ 0  3  1  0  0  0  0  0 44  0]
+ [ 0  0  0  0  0  1  0  0  1 45]]
+[[37  0  0  0  0  0  0  0  0  0]
+ [ 0 40  0  0  0  0  1  0  2  0]
+ [ 0  0 43  1  0  0  0  0  0  0]
+ [ 0  0  0 43  0  0  0  0  1  1]
+ [ 0  0  0  0 37  0  0  1  0  0]
+ [ 0  1  0  0  0 47  0  0  0  0]
+ [ 0  1  0  0  0  0 51  0  0  0]
+ [ 0  1  0  0  1  0  0 46  0  0]
+ [ 0  3  1  0  0  1  0  0 43  0]
+ [ 0  0  0  1  0  1  0  0  3 42]]
+Balanced Accuracy: 0.9608294424107336
+Best hyperparameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.21237135021128362, 'fit_intercept': True, 'intercept_scaling': 0.3909532482592044, 'l1_ratio': 0.5485067128094816}
+[32m[I 2024-04-17 19:03:52,495][39m Trial 4 finished with value: 0.9544464636873293 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.24955802230962043, 'fit_intercept': True, 'intercept_scaling': 0.3294973821714998}. Best is trial 3 with value: 0.9608294424107336.

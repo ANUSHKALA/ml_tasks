@@ -1,0 +1,80 @@
+{
+    "os": "Linux-6.5.0-35-generic-x86_64-with-glibc2.35",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-05-22T13:36:47.232840",
+    "startedAt": "2024-05-22T13:36:45.422689",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/mlops_task.py",
+    "codePathLocal": "mlops_task.py",
+    "codePath": "task_1/mlops_env/mlops_task.py",
+    "git": {
+        "remote": "https://github.com/ANUSHKALA/ml_tasks.git",
+        "commit": "aa21e3c86439c1d1ad52a73a984cbd199d99f265"
+    },
+    "email": "anushkakaimal2003@gmail.com",
+    "root": "/home/anushka/Desktop/take_home/ml_tasks",
+    "host": "anushka-HP-Pavilion-Laptop-15-eg0xxx",
+    "username": "anushka",
+    "executable": "/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1380.244125,
+        "min": 400.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1348.24,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1541.435,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1530.209,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1393.81,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1437.618,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1431.823,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1474.261,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1537.349,
+            "min": 400.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 160.28170013427734,
+            "used": 124.82019805908203
+        }
+    },
+    "memory": {
+        "total": 15.380836486816406
+    }
+}

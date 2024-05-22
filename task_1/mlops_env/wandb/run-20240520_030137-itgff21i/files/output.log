@@ -1,0 +1,64 @@
+
+[32m[I 2024-05-20 03:01:38,575][39m A new study created in memory with name: no-name-7d306a59-93ef-4cd2-be54-66687e6d86ea
+(1797, 64)
+(1797,)
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[32m[I 2024-05-20 03:01:45,884][39m Trial 0 finished with value: 0.9587546369588871 and parameters: {'penalty': 'elasticnet', 'inverse_of_regularization_strength': 0.5220728686511708, 'fit_intercept': False, 'intercept_scaling': 0.9195960589283381, 'l1_ratio': 0.15579777093050207}. Best is trial 0 with value: 0.9587546369588871.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 03:01:52,417][39m Trial 1 finished with value: 0.9608379702922203 and parameters: {'penalty': 'elasticnet', 'inverse_of_regularization_strength': 0.6348258380255504, 'fit_intercept': True, 'intercept_scaling': 0.6870741557055682, 'l1_ratio': 0.32844308040748427}. Best is trial 1 with value: 0.9608379702922203.
+(1797, 64)
+(1797,)
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[32m[I 2024-05-20 03:01:59,241][39m Trial 2 finished with value: 0.9564819096861598 and parameters: {'penalty': 'elasticnet', 'inverse_of_regularization_strength': 0.40751986306581556, 'fit_intercept': False, 'intercept_scaling': 0.9923183195632983, 'l1_ratio': 0.985720221489867}. Best is trial 1 with value: 0.9608379702922203.
+[33m[W 2024-05-20 03:01:59,461][39m Trial 3 failed with parameters: {'penalty': 'l1', 'solver_l1': 'lbfgs', 'inverse_of_regularization_strength': 0.7369319052131459, 'fit_intercept': False, 'intercept_scaling': 0.12430399533613466} because of the following error: ValueError("Solver lbfgs supports only 'l2' or None penalties, got l1 penalty.").
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 150, in objective
+    logisticRegr.fit(x_train, y_train)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1172, in fit
+    solver = _check_solver(self.solver, self.penalty, self.dual)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 67, in _check_solver
+    raise ValueError(
+ValueError: Solver lbfgs supports only 'l2' or None penalties, got l1 penalty.
+[33m[W 2024-05-20 03:01:59,465][39m Trial 3 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 174, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 166, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 150, in objective
+    logisticRegr.fit(x_train, y_train)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1172, in fit
+    solver = _check_solver(self.solver, self.penalty, self.dual)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 67, in _check_solver
+    raise ValueError(
+ValueError: Solver lbfgs supports only 'l2' or None penalties, got l1 penalty.
+(1797, 64)
+(1797,)

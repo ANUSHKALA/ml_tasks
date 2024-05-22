@@ -1,0 +1,59 @@
+
+[32m[I 2024-05-20 09:31:26,144][39m A new study created in memory with name: no-name-0bae4e7a-767a-4453-86d5-eeda14406a78
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 09:31:28,819][39m Trial 0 finished with value: 0.9480070697479354 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.37346124483080023, 'fit_intercept': True, 'intercept_scaling': 0.2703264533379903}. Best is trial 0 with value: 0.9480070697479354.
+score:  0.9466666666666667 balanced_acc:  0.9480070697479354 precision:  0.9482646459334699 recall:  0.9480070697479354
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 09:31:32,915][39m Trial 1 finished with value: 0.9540112605925518 and parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.1637699558111865, 'fit_intercept': True, 'intercept_scaling': 0.24921807680380206, 'l1_ratio': 0.8148902900168762}. Best is trial 1 with value: 0.9540112605925518.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+score:  0.9533333333333334 balanced_acc:  0.9540112605925518 precision:  0.95357503854753 recall:  0.9540112605925518
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 09:31:39,081][39m Trial 2 finished with value: 0.9564819096861598 and parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.3200595321394071, 'fit_intercept': False, 'intercept_scaling': 0.6683590113541154, 'l1_ratio': 0.7727705950717476}. Best is trial 2 with value: 0.9564819096861598.
+score:  0.9555555555555556 balanced_acc:  0.9564819096861598 precision:  0.9556711711431195 recall:  0.9564819096861598
+(1797, 64)
+(1797,)
+score:  0.9577777777777777 balanced_acc:  0.9588997046571462 precision:  0.9586441243003845 recall:  0.9588997046571462
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 09:31:40,519][39m Trial 3 finished with value: 0.9588997046571462 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.16301918433277343, 'fit_intercept': False, 'intercept_scaling': 0.5559604093203105}. Best is trial 3 with value: 0.9588997046571462.
+[33m[W 2024-05-20 09:31:40,726][39m Trial 4 failed with parameters: {'penality': None} because of the following error: TypeError('can only concatenate str (not "NoneType") to str').
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 175, in objective
+    ) = get_hyper_params_from_optuna(trial)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 62, in get_hyper_params_from_optuna
+    solver = trial.suggest_categorical("solver_" + penality, solver_choices)
+                                       ~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+[33m[W 2024-05-20 09:31:40,727][39m Trial 4 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 210, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 202, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 175, in objective
+    ) = get_hyper_params_from_optuna(trial)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 62, in get_hyper_params_from_optuna
+    solver = trial.suggest_categorical("solver_" + penality, solver_choices)
+                                       ~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str

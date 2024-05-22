@@ -1,0 +1,1234 @@
+2024-05-20 02:51:15,895 INFO    StreamThr :360486 [internal.py:wandb_internal():86] W&B internal server running at pid: 360486, started at: 2024-05-20 02:51:15.894487
+2024-05-20 02:51:15,897 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: status
+2024-05-20 02:51:15,899 INFO    WriterThread:360486 [datastore.py:open_for_write():87] open: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/run-gos28hf1.wandb
+2024-05-20 02:51:15,901 DEBUG   SenderThread:360486 [sender.py:send():379] send: header
+2024-05-20 02:51:15,901 DEBUG   SenderThread:360486 [sender.py:send():379] send: run
+2024-05-20 02:51:16,901 INFO    SenderThread:360486 [dir_watcher.py:__init__():211] watching files in: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files
+2024-05-20 02:51:16,901 INFO    SenderThread:360486 [sender.py:_start_run_threads():1124] run started: gos28hf1 with start time 1716153675.89501
+2024-05-20 02:51:16,942 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: check_version
+2024-05-20 02:51:16,942 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: check_version
+2024-05-20 02:51:17,276 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: run_start
+2024-05-20 02:51:17,294 ERROR   HandlerThread:360486 [gpu.py:is_available():381] Error initializing NVML: Driver Not Loaded
+2024-05-20 02:51:17,295 DEBUG   HandlerThread:360486 [system_info.py:__init__():26] System info init
+2024-05-20 02:51:17,295 DEBUG   HandlerThread:360486 [system_info.py:__init__():41] System info init done
+2024-05-20 02:51:17,295 INFO    HandlerThread:360486 [system_monitor.py:start():194] Starting system monitor
+2024-05-20 02:51:17,296 INFO    SystemMonitor:360486 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-20 02:51:17,296 INFO    HandlerThread:360486 [system_monitor.py:probe():214] Collecting system info
+2024-05-20 02:51:17,296 INFO    SystemMonitor:360486 [interfaces.py:start():190] Started cpu monitoring
+2024-05-20 02:51:17,297 INFO    SystemMonitor:360486 [interfaces.py:start():190] Started disk monitoring
+2024-05-20 02:51:17,299 INFO    SystemMonitor:360486 [interfaces.py:start():190] Started memory monitoring
+2024-05-20 02:51:17,300 INFO    SystemMonitor:360486 [interfaces.py:start():190] Started network monitoring
+2024-05-20 02:51:17,310 DEBUG   HandlerThread:360486 [system_info.py:probe():150] Probing system
+2024-05-20 02:51:17,320 DEBUG   HandlerThread:360486 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-20 02:51:17,320 DEBUG   HandlerThread:360486 [system_info.py:probe():198] Probing system done
+2024-05-20 02:51:17,320 DEBUG   HandlerThread:360486 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-35-generic-x86_64-with-glibc2.35', 'python': '3.12.2', 'heartbeatAt': '2024-05-19T21:21:17.310877', 'startedAt': '2024-05-19T21:21:15.882063', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py', 'codePathLocal': 'mlops_task.py', 'codePath': 'mlops_task.py', 'host': 'anushka-HP-Pavilion-Laptop-15-eg0xxx', 'username': 'anushka', 'executable': '/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1395.6975, 'min': 400.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 1519.772, 'min': 400.0, 'max': 4200.0}, {'current': 1527.284, 'min': 400.0, 'max': 4200.0}, {'current': 1020.135, 'min': 400.0, 'max': 4200.0}, {'current': 1286.423, 'min': 400.0, 'max': 4200.0}, {'current': 1525.496, 'min': 400.0, 'max': 4200.0}, {'current': 1468.59, 'min': 400.0, 'max': 4200.0}, {'current': 1504.535, 'min': 400.0, 'max': 4200.0}, {'current': 759.705, 'min': 400.0, 'max': 4200.0}], 'disk': {'/': {'total': 160.28170013427734, 'used': 125.16184616088867}}, 'memory': {'total': 15.38083267211914}}
+2024-05-20 02:51:17,320 INFO    HandlerThread:360486 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-20 02:51:17,320 INFO    HandlerThread:360486 [system_monitor.py:probe():227] Publishing system info
+2024-05-20 02:51:17,320 DEBUG   HandlerThread:360486 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-20 02:51:17,321 ERROR   HandlerThread:360486 [system_info.py:_save_conda():221] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/wandb/sdk/internal/system/system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/subprocess.py", line 1953, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-05-20 02:51:17,323 DEBUG   HandlerThread:360486 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-20 02:51:17,323 INFO    HandlerThread:360486 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-20 02:51:17,325 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:17,325 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-20 02:51:17,453 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-20 02:51:17,453 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-20 02:51:17,453 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: python_packages
+2024-05-20 02:51:17,453 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: stop_status
+2024-05-20 02:51:17,455 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-20 02:51:17,507 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:17,508 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:17,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/conda-environment.yaml
+2024-05-20 02:51:17,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-metadata.json
+2024-05-20 02:51:17,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/requirements.txt
+2024-05-20 02:51:17,977 DEBUG   SenderThread:360486 [sender.py:send():379] send: telemetry
+2024-05-20 02:51:17,979 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:17,980 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:17,980 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:17,980 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:17,981 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:17,981 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:18,639 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:18,639 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/images/Sanity checks plot_2_26b11066db0129e82e45.png with policy now
+2024-05-20 02:51:18,640 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:18,641 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:18,641 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:18,642 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:18,743 INFO    wandb-upload_0:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/6osa3zhr-wandb-metadata.json
+2024-05-20 02:51:18,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Sanity checks plot_2_26b11066db0129e82e45.png
+2024-05-20 02:51:18,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-summary.json
+2024-05-20 02:51:18,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:18,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images
+2024-05-20 02:51:18,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media
+2024-05-20 02:51:19,705 INFO    wandb-upload_1:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/h4xbe4a2-media/images/Sanity checks plot_2_26b11066db0129e82e45.png
+2024-05-20 02:51:20,526 INFO    wandb-upload_0:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/anilhn8m-media/images/Sanity checks plot_2_26b11066db0129e82e45.png
+2024-05-20 02:51:20,902 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:21,643 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 02:51:23,906 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-20 02:51:23,906 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: log_artifact
+2024-05-20 02:51:23,918 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:23,928 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:23,929 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:24,144 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:24,151 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:24,151 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:24,347 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:24,903 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:24,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Confusion Matrix Plot_6_53657a4f54e097b84016.png
+2024-05-20 02:51:24,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/table/Prediction Table_3_60d0b63d5fe417622be7.table.json
+2024-05-20 02:51:24,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Sanity checks plot_9_26b11066db0129e82e45.png
+2024-05-20 02:51:24,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images
+2024-05-20 02:51:24,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media
+2024-05-20 02:51:24,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/table
+2024-05-20 02:51:25,953 INFO    wandb-upload_1:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/i2tu4j7a-media/images/Confusion Matrix Plot_6_53657a4f54e097b84016.png
+2024-05-20 02:51:26,169 INFO    wandb-upload_2:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/ooa2abbd-media/images/Sanity checks plot_9_26b11066db0129e82e45.png
+2024-05-20 02:51:26,614 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-20 02:51:26,624 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:26,625 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:26,626 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:26,866 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:26,873 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:26,874 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:26,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/table/Prediction Table_10_da8de4bb4a3045c976e2.table.json
+2024-05-20 02:51:26,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Confusion Matrix Plot_13_a74577fd38c30cb63614.png
+2024-05-20 02:51:26,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/table
+2024-05-20 02:51:26,905 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images
+2024-05-20 02:51:26,938 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp941rmlli
+2024-05-20 02:51:27,019 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5kf7hwgm
+2024-05-20 02:51:27,152 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-20 02:51:27,192 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptc_cpz6_
+2024-05-20 02:51:27,310 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1zgd4b2a
+2024-05-20 02:51:27,343 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpr_c8uftg
+2024-05-20 02:51:27,344 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpndez7066
+2024-05-20 02:51:27,344 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpptsx5_sz
+2024-05-20 02:51:27,344 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmps2wd8b4n
+2024-05-20 02:51:27,344 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpnda3fec9
+2024-05-20 02:51:27,344 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpm0cgdu6x
+2024-05-20 02:51:27,345 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_folkq8o
+2024-05-20 02:51:27,347 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpxi69_89y
+2024-05-20 02:51:27,348 INFO    wandb-upload_14:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpe4tuwqsm
+2024-05-20 02:51:27,351 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwawl6cpu
+2024-05-20 02:51:27,356 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpgmkizv8y
+2024-05-20 02:51:27,356 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0vzcsew_
+2024-05-20 02:51:27,360 INFO    wandb-upload_13:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpe22taspb
+2024-05-20 02:51:27,364 INFO    wandb-upload_44:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5tog140w
+2024-05-20 02:51:27,364 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprwp_7ddz
+2024-05-20 02:51:27,365 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpymgw7qwz
+2024-05-20 02:51:27,369 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpn1neqmle
+2024-05-20 02:51:27,376 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpp5wpq204
+2024-05-20 02:51:27,376 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpskegoxf3
+2024-05-20 02:51:27,376 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp368nj5eh
+2024-05-20 02:51:27,376 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpr6pcbj6y
+2024-05-20 02:51:27,382 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpld4ew_fb
+2024-05-20 02:51:27,382 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8clyvyai
+2024-05-20 02:51:27,404 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3sook59k
+2024-05-20 02:51:27,438 INFO    wandb-upload_0:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/jxgcgdjm-media/table/Prediction Table_3_60d0b63d5fe417622be7.table.json
+2024-05-20 02:51:27,438 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpo68ny_6i
+2024-05-20 02:51:27,439 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2yy1byfc
+2024-05-20 02:51:27,444 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptlmmwx6x
+2024-05-20 02:51:27,447 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpumfgmox4
+2024-05-20 02:51:27,451 INFO    wandb-upload_51:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdx3c34yw
+2024-05-20 02:51:27,454 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmkq53v5p
+2024-05-20 02:51:27,457 INFO    wandb-upload_6:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpn2eiite_
+2024-05-20 02:51:27,525 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpf8e4a3ms
+2024-05-20 02:51:27,669 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmwrvuilr
+2024-05-20 02:51:27,684 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpgs_wvybs
+2024-05-20 02:51:27,684 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpz8j8ic7v
+2024-05-20 02:51:27,685 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpp8frfuyt
+2024-05-20 02:51:27,685 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpfudpj8g4
+2024-05-20 02:51:27,702 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkapk4r8q
+2024-05-20 02:51:27,703 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8m4_t1m7
+2024-05-20 02:51:27,704 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmxrrinvc
+2024-05-20 02:51:27,705 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpu6d7mvae
+2024-05-20 02:51:27,705 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3xu0yl0o
+2024-05-20 02:51:27,706 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpur1ig68l
+2024-05-20 02:51:27,707 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpujtvww65
+2024-05-20 02:51:27,707 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpb4nc8pwh
+2024-05-20 02:51:27,707 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprceheaw4
+2024-05-20 02:51:27,707 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprtgzw8pr
+2024-05-20 02:51:27,862 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptmn_0c4h
+2024-05-20 02:51:27,904 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_created():271] file/dir created: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Sanity checks plot_16_26b11066db0129e82e45.png
+2024-05-20 02:51:27,905 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images
+2024-05-20 02:51:27,921 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp01am3cg5
+2024-05-20 02:51:28,145 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmphuv51hm9
+2024-05-20 02:51:28,154 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpa8dycj2n
+2024-05-20 02:51:28,176 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 02:51:28,253 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpza6qg45i
+2024-05-20 02:51:28,264 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbmevuwif
+2024-05-20 02:51:28,265 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp7rzy8bb1
+2024-05-20 02:51:28,267 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpac18_h6b
+2024-05-20 02:51:28,278 INFO    wandb-upload_21:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpzya0oug6
+2024-05-20 02:51:28,373 INFO    wandb-upload_63:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpag8cophp
+2024-05-20 02:51:28,382 INFO    wandb-upload_28:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpozxb6qk0
+2024-05-20 02:51:28,383 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpt34_qm7b
+2024-05-20 02:51:28,396 INFO    wandb-upload_33:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0guokgxz
+2024-05-20 02:51:28,404 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpu15bgphb
+2024-05-20 02:51:28,422 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpw_izm37_
+2024-05-20 02:51:29,018 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4yls1ri8
+2024-05-20 02:51:29,032 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbni6j482
+2024-05-20 02:51:29,036 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2mtn15_5
+2024-05-20 02:51:29,036 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpxf1lbopd
+2024-05-20 02:51:29,037 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmphumfqoea
+2024-05-20 02:51:29,037 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpewp63ih_
+2024-05-20 02:51:29,041 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmppizom5w_
+2024-05-20 02:51:29,041 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp22tjjtv4
+2024-05-20 02:51:29,044 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmper7qby03
+2024-05-20 02:51:29,044 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpq0cijxik
+2024-05-20 02:51:29,305 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpebh1ft5t
+2024-05-20 02:51:29,310 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjli295gb
+2024-05-20 02:51:29,310 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpobescqcv
+2024-05-20 02:51:29,312 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpr165d3t5
+2024-05-20 02:51:29,315 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpy61lk3v9
+2024-05-20 02:51:29,315 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpttzsk_ay
+2024-05-20 02:51:29,320 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpezfwg5yc
+2024-05-20 02:51:29,320 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdmckck9r
+2024-05-20 02:51:29,328 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwa_pq1qp
+2024-05-20 02:51:29,328 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpw34r90c0
+2024-05-20 02:51:29,331 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpnp3_bqz3
+2024-05-20 02:51:29,333 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpli5npyu3
+2024-05-20 02:51:29,345 INFO    wandb-upload_51:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9w5n7pfp
+2024-05-20 02:51:29,345 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpxp29639c
+2024-05-20 02:51:29,346 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1slxmmiz
+2024-05-20 02:51:29,347 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpq76dginw
+2024-05-20 02:51:29,350 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpeonmjjmd
+2024-05-20 02:51:29,350 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpnn238x4u
+2024-05-20 02:51:29,350 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmnjr3jmh
+2024-05-20 02:51:29,357 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp58zkkpu_
+2024-05-20 02:51:29,358 INFO    wandb-upload_13:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp7dyiod_y
+2024-05-20 02:51:29,362 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9mqlh_06
+2024-05-20 02:51:29,367 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3unvrybg
+2024-05-20 02:51:29,368 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqoiq745c
+2024-05-20 02:51:29,368 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6pgm5z9k
+2024-05-20 02:51:29,369 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp325b5i2a
+2024-05-20 02:51:29,369 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9jywb7g3
+2024-05-20 02:51:29,369 INFO    wandb-upload_0:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpa1aw7h2i
+2024-05-20 02:51:29,369 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpk4da_pa0
+2024-05-20 02:51:29,370 INFO    wandb-upload_14:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpblb7_0qv
+2024-05-20 02:51:29,379 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpq6vqxbti
+2024-05-20 02:51:29,384 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwox_3wdk
+2024-05-20 02:51:29,464 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmps0ur7tb9
+2024-05-20 02:51:29,498 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbvga_6vs
+2024-05-20 02:51:29,537 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9iihwwke
+2024-05-20 02:51:29,546 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpen5c5y62
+2024-05-20 02:51:29,740 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptogz54h8
+2024-05-20 02:51:29,938 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdvawfpvi
+2024-05-20 02:51:29,954 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_mlfh5ft
+2024-05-20 02:51:29,955 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp7pcbf1ph
+2024-05-20 02:51:29,955 INFO    wandb-upload_33:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyj1m_nq8
+2024-05-20 02:51:29,956 INFO    wandb-upload_28:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpq0hac74p
+2024-05-20 02:51:29,958 INFO    wandb-upload_63:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyc3khjb3
+2024-05-20 02:51:29,965 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpww535gn0
+2024-05-20 02:51:29,972 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbt50ezh0
+2024-05-20 02:51:29,975 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4vzg4zf5
+2024-05-20 02:51:30,213 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpxf3g99pe
+2024-05-20 02:51:30,237 INFO    wandb-upload_6:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpgnbj87f4
+2024-05-20 02:51:30,237 INFO    wandb-upload_44:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1zhkvc2w
+2024-05-20 02:51:30,250 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6jmkqewo
+2024-05-20 02:51:30,261 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp16hhy0so
+2024-05-20 02:51:30,284 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprg1944ab
+2024-05-20 02:51:30,306 INFO    wandb-upload_21:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpnesfj52s
+2024-05-20 02:51:30,438 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpklyc9fzt
+2024-05-20 02:51:30,438 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpc9mv_34h
+2024-05-20 02:51:30,443 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprrvlggem
+2024-05-20 02:51:30,449 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp14a3mw2f
+2024-05-20 02:51:30,449 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpypkrttw8
+2024-05-20 02:51:30,475 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8mdzb2ba
+2024-05-20 02:51:30,475 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvuthc99m
+2024-05-20 02:51:30,481 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpn2eg2i52
+2024-05-20 02:51:30,625 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqjf0ubqd
+2024-05-20 02:51:30,648 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6obhg2nr
+2024-05-20 02:51:30,651 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkav2ar0b
+2024-05-20 02:51:30,711 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp18lsxqkj
+2024-05-20 02:51:30,717 INFO    wandb-upload_14:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_3vjd4fc
+2024-05-20 02:51:30,720 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpo4g30anq
+2024-05-20 02:51:30,720 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpd27niqzo
+2024-05-20 02:51:30,721 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp410j_bmt
+2024-05-20 02:51:30,737 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpfd4tmg2c
+2024-05-20 02:51:30,738 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprci7zyfr
+2024-05-20 02:51:30,738 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmposbpklwv
+2024-05-20 02:51:30,738 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpez2kncm_
+2024-05-20 02:51:30,744 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2boorymh
+2024-05-20 02:51:30,744 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp66rwajvg
+2024-05-20 02:51:30,744 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpb91eonqf
+2024-05-20 02:51:30,754 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpovcjqhpr
+2024-05-20 02:51:30,755 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1n8u7ca8
+2024-05-20 02:51:30,757 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvw5f8ajc
+2024-05-20 02:51:30,759 INFO    wandb-upload_0:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdofx_ik2
+2024-05-20 02:51:30,762 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp99ojyezq
+2024-05-20 02:51:30,762 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpn0vpm20o
+2024-05-20 02:51:30,763 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpiuxyt6dq
+2024-05-20 02:51:30,764 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdy8c70b_
+2024-05-20 02:51:30,764 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptw30nj2n
+2024-05-20 02:51:30,765 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpd9rnjoqq
+2024-05-20 02:51:30,766 INFO    wandb-upload_13:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpf4mmw8pp
+2024-05-20 02:51:30,766 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8bjaodqm
+2024-05-20 02:51:30,779 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpns4jya0o
+2024-05-20 02:51:30,805 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpesppnc76
+2024-05-20 02:51:30,873 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2ozpi5og
+2024-05-20 02:51:30,939 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp92q_vnn3
+2024-05-20 02:51:31,081 INFO    wandb-upload_63:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpand8pfi4
+2024-05-20 02:51:31,085 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmj25mimy
+2024-05-20 02:51:31,088 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpcvyw4px1
+2024-05-20 02:51:31,095 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpc2gdkvil
+2024-05-20 02:51:31,096 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpytyfoz95
+2024-05-20 02:51:31,096 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3stmls6y
+2024-05-20 02:51:31,096 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqs734m8z
+2024-05-20 02:51:31,096 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvssh06__
+2024-05-20 02:51:31,312 INFO    wandb-upload_28:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0rq_2bvm
+2024-05-20 02:51:31,322 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwao0e7ct
+2024-05-20 02:51:31,334 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0xy36iiq
+2024-05-20 02:51:31,378 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpcl2zr81f
+2024-05-20 02:51:31,426 INFO    wandb-upload_33:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptiwiq0__
+2024-05-20 02:51:31,637 INFO    wandb-upload_51:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpewlcxjm6
+2024-05-20 02:51:31,678 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpac__e7i3
+2024-05-20 02:51:31,678 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1rxuuapj
+2024-05-20 02:51:31,691 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpeglq_e4m
+2024-05-20 02:51:31,708 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6c85d4s_
+2024-05-20 02:51:31,780 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1u2bxlqy
+2024-05-20 02:51:31,785 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpa251zem5
+2024-05-20 02:51:31,790 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpg9knllxl
+2024-05-20 02:51:31,791 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpo992kysy
+2024-05-20 02:51:31,793 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbmzhdz3n
+2024-05-20 02:51:31,795 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpgm4mq8kt
+2024-05-20 02:51:31,811 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpeneibitn
+2024-05-20 02:51:31,815 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp7ydttdwd
+2024-05-20 02:51:31,828 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp7dah574f
+2024-05-20 02:51:31,828 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdvv0ixua
+2024-05-20 02:51:32,012 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqlasl0gk
+2024-05-20 02:51:32,022 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpx66962n5
+2024-05-20 02:51:32,030 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpi0kvzlwa
+2024-05-20 02:51:32,030 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpht6ljdim
+2024-05-20 02:51:32,030 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpx0qx56q1
+2024-05-20 02:51:32,052 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6afehoqn
+2024-05-20 02:51:32,055 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp89wtm94p
+2024-05-20 02:51:32,072 INFO    wandb-upload_14:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqkm7ly32
+2024-05-20 02:51:32,076 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_ulm5gzh
+2024-05-20 02:51:32,085 INFO    wandb-upload_6:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpm21g05a1
+2024-05-20 02:51:32,090 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyl_irok3
+2024-05-20 02:51:32,091 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpcy388vbi
+2024-05-20 02:51:32,093 INFO    wandb-upload_21:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpy30nizxe
+2024-05-20 02:51:32,173 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpazdoleyg
+2024-05-20 02:51:32,175 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp84xzvs0k
+2024-05-20 02:51:32,230 INFO    wandb-upload_44:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpk7ipfzpl
+2024-05-20 02:51:32,434 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqz4qe6c8
+2024-05-20 02:51:32,441 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvqrkq474
+2024-05-20 02:51:32,441 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4j9f_1da
+2024-05-20 02:51:32,444 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvtjz_q69
+2024-05-20 02:51:32,480 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpr3ii64mo
+2024-05-20 02:51:32,632 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpd2e_wqwc
+2024-05-20 02:51:32,645 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjbx4n8d1
+2024-05-20 02:51:32,651 INFO    wandb-upload_0:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpb4l_4tlk
+2024-05-20 02:51:32,660 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmph7hxhx1n
+2024-05-20 02:51:32,662 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpe4bs32nh
+2024-05-20 02:51:32,662 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmppk6qpse3
+2024-05-20 02:51:32,667 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9zh9q47j
+2024-05-20 02:51:32,667 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpuyilcymr
+2024-05-20 02:51:32,670 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpfzoon5qe
+2024-05-20 02:51:32,671 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvgoqtje1
+2024-05-20 02:51:32,673 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6npz5q5b
+2024-05-20 02:51:32,684 INFO    wandb-upload_13:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6tl3ekie
+2024-05-20 02:51:32,688 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmplf01wc_m
+2024-05-20 02:51:32,691 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9xfpbcpe
+2024-05-20 02:51:32,695 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8frs1x1o
+2024-05-20 02:51:32,700 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkk_ktkc8
+2024-05-20 02:51:32,710 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp71q13tp0
+2024-05-20 02:51:32,726 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvjadlzrk
+2024-05-20 02:51:32,727 INFO    wandb-upload_63:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0jec2bsf
+2024-05-20 02:51:32,964 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpttxqjcwo
+2024-05-20 02:51:32,967 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdje8j6uc
+2024-05-20 02:51:32,968 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp53jr08p7
+2024-05-20 02:51:32,969 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2xy_ridv
+2024-05-20 02:51:32,969 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpke9mdwm1
+2024-05-20 02:51:32,982 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4xydcimc
+2024-05-20 02:51:33,071 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6d3vfewx
+2024-05-20 02:51:33,081 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5hphl4lg
+2024-05-20 02:51:33,084 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpuos8reak
+2024-05-20 02:51:33,084 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3ngq7ib8
+2024-05-20 02:51:33,178 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-20 02:51:33,306 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyol9upnd
+2024-05-20 02:51:33,322 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmplmaudhmk
+2024-05-20 02:51:33,325 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqw1hc9he
+2024-05-20 02:51:33,329 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwpr30kj0
+2024-05-20 02:51:33,329 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpu2atf4_r
+2024-05-20 02:51:33,331 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpuoh6snk_
+2024-05-20 02:51:33,337 INFO    wandb-upload_33:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmh1ur1zv
+2024-05-20 02:51:33,344 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpg5wxcc9n
+2024-05-20 02:51:33,345 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmqljmzsa
+2024-05-20 02:51:33,348 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpnrth9v8c
+2024-05-20 02:51:33,362 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpz8klpbv5
+2024-05-20 02:51:33,362 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjfv9w6bq
+2024-05-20 02:51:33,374 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_lie5eyu
+2024-05-20 02:51:33,377 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpif6xo0vp
+2024-05-20 02:51:33,519 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmphsqjjhvs
+2024-05-20 02:51:33,589 INFO    wandb-upload_51:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp727wdwpw
+2024-05-20 02:51:33,601 INFO    wandb-upload_28:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmphj6uv3j7
+2024-05-20 02:51:33,625 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptvxat2fm
+2024-05-20 02:51:33,635 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbkzzmhum
+2024-05-20 02:51:33,761 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpg9bt5q45
+2024-05-20 02:51:33,761 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpu7kznqwx
+2024-05-20 02:51:33,768 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_16twts_
+2024-05-20 02:51:33,773 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptty9fcgx
+2024-05-20 02:51:33,774 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmps96qw7zo
+2024-05-20 02:51:33,774 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpf_ahx3y9
+2024-05-20 02:51:33,775 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpva9ld9y7
+2024-05-20 02:51:33,775 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprx0xvcze
+2024-05-20 02:51:33,988 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp50hva0eu
+2024-05-20 02:51:33,991 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwjdpldtn
+2024-05-20 02:51:33,996 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpl29xcxnc
+2024-05-20 02:51:33,997 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpco0bkgp6
+2024-05-20 02:51:33,998 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8r3y0dgi
+2024-05-20 02:51:33,998 INFO    wandb-upload_0:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpcv9shvbn
+2024-05-20 02:51:34,002 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpj42h1hop
+2024-05-20 02:51:34,002 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpzuhuayot
+2024-05-20 02:51:34,002 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp30gybout
+2024-05-20 02:51:34,004 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpafbsw5c_
+2024-05-20 02:51:34,008 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpky1x7i60
+2024-05-20 02:51:34,009 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4qn96v_d
+2024-05-20 02:51:34,015 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpswfbrwza
+2024-05-20 02:51:34,015 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpoh2hvfqz
+2024-05-20 02:51:34,015 INFO    wandb-upload_6:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmppbnryyi3
+2024-05-20 02:51:34,017 INFO    wandb-upload_44:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_tx_0geh
+2024-05-20 02:51:34,020 INFO    wandb-upload_21:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9_ogoxsb
+2024-05-20 02:51:34,024 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwn3bvseu
+2024-05-20 02:51:34,034 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyolguek0
+2024-05-20 02:51:34,068 INFO    wandb-upload_14:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvfi6yr09
+2024-05-20 02:51:34,265 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqzoxp_ql
+2024-05-20 02:51:34,279 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyr87pqq6
+2024-05-20 02:51:34,416 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8pa_0oxo
+2024-05-20 02:51:34,417 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3ue2uj4a
+2024-05-20 02:51:34,417 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkvyesd52
+2024-05-20 02:51:34,420 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpo_1c9zym
+2024-05-20 02:51:34,437 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpise4qj0e
+2024-05-20 02:51:34,444 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqqpwwhw_
+2024-05-20 02:51:34,639 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpu7jjxcyw
+2024-05-20 02:51:34,644 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpn2rqi3h6
+2024-05-20 02:51:34,650 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpz15swz3o
+2024-05-20 02:51:34,656 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqp0r_7ul
+2024-05-20 02:51:34,660 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp18hqozx7
+2024-05-20 02:51:34,665 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpudz__kea
+2024-05-20 02:51:34,665 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpzfknfnoh
+2024-05-20 02:51:34,666 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpf7yy4wbl
+2024-05-20 02:51:34,673 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpg4wiom4z
+2024-05-20 02:51:34,684 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmplrutcvnl
+2024-05-20 02:51:34,684 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpfst3enrw
+2024-05-20 02:51:34,684 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp90os9mnm
+2024-05-20 02:51:34,689 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqu7osw5i
+2024-05-20 02:51:34,690 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmph13eg7ip
+2024-05-20 02:51:34,703 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp77k_wihd
+2024-05-20 02:51:34,703 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8jbpjftg
+2024-05-20 02:51:34,764 INFO    wandb-upload_33:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8qngc3v8
+2024-05-20 02:51:34,866 INFO    wandb-upload_63:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpnm_uwsn8
+2024-05-20 02:51:34,883 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmvra75fk
+2024-05-20 02:51:34,966 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdy312pt3
+2024-05-20 02:51:35,085 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0gaihu79
+2024-05-20 02:51:35,099 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmppccs3wob
+2024-05-20 02:51:35,102 INFO    wandb-upload_13:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2c6epkvq
+2024-05-20 02:51:35,103 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmps7ag9b0r
+2024-05-20 02:51:35,342 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptjmat8yl
+2024-05-20 02:51:35,342 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpptds_duc
+2024-05-20 02:51:35,345 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwvvrkuxe
+2024-05-20 02:51:35,345 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp59jfph11
+2024-05-20 02:51:35,346 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpd8bwbl56
+2024-05-20 02:51:35,351 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpskh97zfu
+2024-05-20 02:51:35,380 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpz90rtbtd
+2024-05-20 02:51:35,383 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp477sde9y
+2024-05-20 02:51:35,384 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2cws8zv5
+2024-05-20 02:51:35,397 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8i6gblpf
+2024-05-20 02:51:35,403 INFO    wandb-upload_0:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpa1vuyj8n
+2024-05-20 02:51:35,405 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1rwj751q
+2024-05-20 02:51:35,406 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8jwwemg8
+2024-05-20 02:51:35,408 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpojzaw7oi
+2024-05-20 02:51:35,408 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0zbumdo9
+2024-05-20 02:51:35,408 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkd05kaf8
+2024-05-20 02:51:35,408 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpxmqsct3e
+2024-05-20 02:51:35,409 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3dns87fs
+2024-05-20 02:51:35,511 INFO    wandb-upload_6:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmplikv9k7g
+2024-05-20 02:51:35,517 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5vsvg7oj
+2024-05-20 02:51:35,538 INFO    wandb-upload_51:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp7g7_7wcc
+2024-05-20 02:51:35,565 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp060c6azw
+2024-05-20 02:51:35,571 INFO    wandb-upload_28:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9yu9mit3
+2024-05-20 02:51:35,585 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjtldcaei
+2024-05-20 02:51:35,620 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp1hy645mq
+2024-05-20 02:51:35,670 INFO    wandb-upload_44:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjm8wag6v
+2024-05-20 02:51:35,757 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpo_pj6kkv
+2024-05-20 02:51:35,757 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpy82g7o5h
+2024-05-20 02:51:35,758 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbirvrwa9
+2024-05-20 02:51:35,765 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmppbv8xynz
+2024-05-20 02:51:35,765 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpitxt8xj_
+2024-05-20 02:51:35,945 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpj755n8tu
+2024-05-20 02:51:35,957 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpzsniakme
+2024-05-20 02:51:35,978 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmps4s6j988
+2024-05-20 02:51:35,978 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9rh2_byb
+2024-05-20 02:51:35,986 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp2loenihp
+2024-05-20 02:51:35,996 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9o964xce
+2024-05-20 02:51:35,996 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6wgx2o3g
+2024-05-20 02:51:35,996 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpl81sbu0a
+2024-05-20 02:51:35,996 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp81aiqwvq
+2024-05-20 02:51:36,005 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpm7vh2fwm
+2024-05-20 02:51:36,006 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpv8sxv1__
+2024-05-20 02:51:36,007 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpim5xeplp
+2024-05-20 02:51:36,010 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpj0tbnq6k
+2024-05-20 02:51:36,031 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpe4rxrvrm
+2024-05-20 02:51:36,057 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwq32k83q
+2024-05-20 02:51:36,159 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjp2i_07e
+2024-05-20 02:51:36,229 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyye34wyf
+2024-05-20 02:51:36,258 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmjy3e9kf
+2024-05-20 02:51:36,259 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmprefr9tj9
+2024-05-20 02:51:36,259 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpfpj42pyx
+2024-05-20 02:51:36,288 INFO    wandb-upload_21:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpvbjrq57n
+2024-05-20 02:51:36,329 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpo4u8x261
+2024-05-20 02:51:36,364 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpabsdbr05
+2024-05-20 02:51:36,371 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5xa5igxn
+2024-05-20 02:51:36,381 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpgs1n322f
+2024-05-20 02:51:36,384 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpc5q4hqhj
+2024-05-20 02:51:36,385 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5yikg9xh
+2024-05-20 02:51:36,386 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpir_mirke
+2024-05-20 02:51:36,386 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpv94qianq
+2024-05-20 02:51:36,399 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3_x0x4tg
+2024-05-20 02:51:36,642 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_1ogbu9x
+2024-05-20 02:51:36,650 INFO    wandb-upload_17:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpzfqe79b9
+2024-05-20 02:51:36,660 INFO    wandb-upload_29:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpyc4cjjno
+2024-05-20 02:51:36,689 INFO    wandb-upload_54:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpcdisg7yk
+2024-05-20 02:51:36,712 INFO    wandb-upload_33:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpmafnrndb
+2024-05-20 02:51:36,714 INFO    wandb-upload_12:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpxath671n
+2024-05-20 02:51:36,921 INFO    wandb-upload_14:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpttuirwvk
+2024-05-20 02:51:36,921 INFO    wandb-upload_19:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpiplqh8n9
+2024-05-20 02:51:37,034 INFO    wandb-upload_32:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpg7nc5769
+2024-05-20 02:51:37,038 INFO    wandb-upload_3:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp77l6rwgs
+2024-05-20 02:51:37,039 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpq_jtgvxp
+2024-05-20 02:51:37,043 INFO    wandb-upload_28:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0lj0kta8
+2024-05-20 02:51:37,043 INFO    wandb-upload_36:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpc9w8s199
+2024-05-20 02:51:37,047 INFO    wandb-upload_24:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5k3_s1pq
+2024-05-20 02:51:37,052 INFO    wandb-upload_51:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpffsgihnw
+2024-05-20 02:51:37,067 INFO    wandb-upload_23:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdqhx1pe2
+2024-05-20 02:51:37,274 INFO    wandb-upload_9:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4pz4397m
+2024-05-20 02:51:37,284 INFO    wandb-upload_27:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpl9e8jj9t
+2024-05-20 02:51:37,293 INFO    wandb-upload_6:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkqw7f3wr
+2024-05-20 02:51:37,302 INFO    wandb-upload_30:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpr_cqkjby
+2024-05-20 02:51:37,303 INFO    wandb-upload_52:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp3d9hq1u6
+2024-05-20 02:51:37,304 INFO    wandb-upload_43:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpqzc0fw2l
+2024-05-20 02:51:37,305 INFO    wandb-upload_40:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbr5jcl4b
+2024-05-20 02:51:37,306 INFO    wandb-upload_10:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_qrr50jm
+2024-05-20 02:51:37,306 INFO    wandb-upload_26:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpwdzdo547
+2024-05-20 02:51:37,307 INFO    wandb-upload_47:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpb8s7t1sm
+2024-05-20 02:51:37,307 INFO    wandb-upload_50:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdt28bzeh
+2024-05-20 02:51:37,308 INFO    wandb-upload_58:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_i1xg3jw
+2024-05-20 02:51:37,308 INFO    wandb-upload_38:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkz98svxv
+2024-05-20 02:51:37,310 INFO    wandb-upload_2:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpgb8si4rv
+2024-05-20 02:51:37,312 INFO    wandb-upload_25:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp70fddxi8
+2024-05-20 02:51:37,312 INFO    wandb-upload_22:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp4w90kvu1
+2024-05-20 02:51:37,316 INFO    wandb-upload_20:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpx9noeze2
+2024-05-20 02:51:37,321 INFO    wandb-upload_0:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpddb4ut6t
+2024-05-20 02:51:37,321 INFO    wandb-upload_4:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpe_q_4n1l
+2024-05-20 02:51:37,322 INFO    wandb-upload_62:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpv68x00w6
+2024-05-20 02:51:37,326 INFO    wandb-upload_44:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjnec3974
+2024-05-20 02:51:37,354 INFO    wandb-upload_16:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5bxqqc2n
+2024-05-20 02:51:37,444 INFO    wandb-upload_63:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp35kug6zy
+2024-05-20 02:51:37,495 INFO    wandb-upload_55:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpr7eaydrt
+2024-05-20 02:51:37,524 INFO    wandb-upload_13:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpe3h_0qyd
+2024-05-20 02:51:37,533 INFO    wandb-upload_17:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/0adae5hj-media/table/Prediction Table_10_da8de4bb4a3045c976e2.table.json
+2024-05-20 02:51:37,543 INFO    wandb-upload_41:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp6qxrdyyf
+2024-05-20 02:51:37,554 INFO    wandb-upload_57:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpd56hui11
+2024-05-20 02:51:37,561 INFO    wandb-upload_29:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/bsn0vvk9-media/images/Confusion Matrix Plot_13_a74577fd38c30cb63614.png
+2024-05-20 02:51:37,660 INFO    wandb-upload_35:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp92asngv3
+2024-05-20 02:51:37,780 INFO    wandb-upload_54:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/efr5599l-media/images/Sanity checks plot_16_26b11066db0129e82e45.png
+2024-05-20 02:51:37,859 INFO    wandb-upload_46:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmptbbicw91
+2024-05-20 02:51:37,860 INFO    wandb-upload_21:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpdn9n_gcl
+2024-05-20 02:51:37,871 INFO    wandb-upload_60:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp9t7kuzoe
+2024-05-20 02:51:37,962 INFO    wandb-upload_61:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpk8fxn8rk
+2024-05-20 02:51:37,966 INFO    wandb-upload_56:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpkyuvs69l
+2024-05-20 02:51:37,977 INFO    wandb-upload_7:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp_0yx_3ng
+2024-05-20 02:51:37,978 INFO    wandb-upload_42:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpi6d_b0sz
+2024-05-20 02:51:37,978 INFO    wandb-upload_34:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmphbt2q3vu
+2024-05-20 02:51:37,979 INFO    wandb-upload_45:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmplkuw5reh
+2024-05-20 02:51:38,179 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-20 02:51:38,208 INFO    wandb-upload_11:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp46ih6an4
+2024-05-20 02:51:38,208 INFO    wandb-upload_59:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp5jscg7e0
+2024-05-20 02:51:38,273 INFO    wandb-upload_5:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpbcf5e3n5
+2024-05-20 02:51:38,273 INFO    wandb-upload_18:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp467t_kps
+2024-05-20 02:51:38,273 INFO    wandb-upload_1:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpi2767n9i
+2024-05-20 02:51:38,280 INFO    wandb-upload_37:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpoceyj8mo
+2024-05-20 02:51:38,281 INFO    wandb-upload_49:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp8mwfrydn
+2024-05-20 02:51:38,281 INFO    wandb-upload_8:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpq21r_i3q
+2024-05-20 02:51:38,281 INFO    wandb-upload_15:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpjj8y5od1
+2024-05-20 02:51:38,281 INFO    wandb-upload_39:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpagzjy2_a
+2024-05-20 02:51:38,281 INFO    wandb-upload_31:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpng9xgeo3
+2024-05-20 02:51:38,282 INFO    wandb-upload_53:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmpchr96bd6
+2024-05-20 02:51:39,883 INFO    SenderThread:360486 [sender.py:send_request_log_artifact():1456] logged artifact run-gos28hf1-PredictionTable - {'id': 'QXJ0aWZhY3Q6ODQyNjk4NjAw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3Njg2MTYyNg==', 'latestArtifact': None}}
+2024-05-20 02:51:39,884 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:39,884 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 02:51:39,884 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/table/Prediction Table_3_60d0b63d5fe417622be7.table.json with policy now
+2024-05-20 02:51:39,884 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,884 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,885 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,886 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,886 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,886 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,886 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,886 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,888 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,888 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:39,888 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/images/Confusion Matrix Plot_6_53657a4f54e097b84016.png with policy now
+2024-05-20 02:51:39,888 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,888 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,888 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,888 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,888 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,889 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,889 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,889 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,890 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,890 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:39,890 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/images/Sanity checks plot_9_26b11066db0129e82e45.png with policy now
+2024-05-20 02:51:39,891 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:39,891 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:39,891 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:39,891 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: log_artifact
+2024-05-20 02:51:39,910 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-summary.json
+2024-05-20 02:51:40,650 INFO    wandb-upload_33:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/z0cp4ll0-media/table/Prediction Table_3_60d0b63d5fe417622be7.table.json
+2024-05-20 02:51:40,772 INFO    wandb-upload_32:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/guy59xy5-media/images/Sanity checks plot_9_26b11066db0129e82e45.png
+2024-05-20 02:51:40,922 INFO    wandb-upload_14:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/h3gvyoqn-media/images/Confusion Matrix Plot_6_53657a4f54e097b84016.png
+2024-05-20 02:51:41,416 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphxa3pup4
+2024-05-20 02:51:41,416 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjnomi3dl
+2024-05-20 02:51:41,417 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplep_th6v
+2024-05-20 02:51:41,417 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2eqaspc7
+2024-05-20 02:51:41,417 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8xtls1_e
+2024-05-20 02:51:41,417 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdg4ud_4q
+2024-05-20 02:51:41,417 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9dphgbi5
+2024-05-20 02:51:41,417 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpp35oo1at
+2024-05-20 02:51:41,417 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk_hkscqs
+2024-05-20 02:51:41,417 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprwf4q4yc
+2024-05-20 02:51:41,417 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp3b6z_jt_
+2024-05-20 02:51:41,417 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpaeymhuib
+2024-05-20 02:51:41,417 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpev7ilncw
+2024-05-20 02:51:41,417 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdpxehlra
+2024-05-20 02:51:41,417 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpngzqphuc
+2024-05-20 02:51:41,417 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpklrn66n_
+2024-05-20 02:51:41,417 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpia1p6gvc
+2024-05-20 02:51:41,417 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpff8za45u
+2024-05-20 02:51:41,417 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcuhsm65q
+2024-05-20 02:51:41,417 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp083ftg12
+2024-05-20 02:51:41,417 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0wm8m6hx
+2024-05-20 02:51:41,418 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpsroa5qea
+2024-05-20 02:51:41,418 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcig4moub
+2024-05-20 02:51:41,418 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgix29pas
+2024-05-20 02:51:41,418 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0qzs5ns5
+2024-05-20 02:51:41,418 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6kxg0__q
+2024-05-20 02:51:41,418 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn04he00n
+2024-05-20 02:51:41,418 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp43axw_ff
+2024-05-20 02:51:41,418 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp3lq3q7po
+2024-05-20 02:51:41,418 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphth2_wuz
+2024-05-20 02:51:41,418 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplv3zhr7n
+2024-05-20 02:51:41,418 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4vbppdq_
+2024-05-20 02:51:41,418 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6ofwl2c_
+2024-05-20 02:51:41,418 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwa5f0n5q
+2024-05-20 02:51:41,418 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6d9hqcy6
+2024-05-20 02:51:41,418 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpijb4913g
+2024-05-20 02:51:41,418 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa0tuiwcd
+2024-05-20 02:51:41,418 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8d9311b6
+2024-05-20 02:51:41,418 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpm53qqiv8
+2024-05-20 02:51:41,418 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpyrloxnwm
+2024-05-20 02:51:41,418 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwqwsqu27
+2024-05-20 02:51:41,418 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwe8dzslp
+2024-05-20 02:51:41,418 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp1qw6god2
+2024-05-20 02:51:41,418 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp006pljpx
+2024-05-20 02:51:41,418 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdexiruo9
+2024-05-20 02:51:41,418 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwfxcspj5
+2024-05-20 02:51:41,418 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmbokvt90
+2024-05-20 02:51:41,418 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbdkeptpj
+2024-05-20 02:51:41,418 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpq2rna0hu
+2024-05-20 02:51:41,418 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2lu7kw1e
+2024-05-20 02:51:41,418 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpkm4a4464
+2024-05-20 02:51:41,418 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa864sbx_
+2024-05-20 02:51:41,418 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcmoyzvy7
+2024-05-20 02:51:41,418 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpvwczfm1p
+2024-05-20 02:51:41,418 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa_6ir06q
+2024-05-20 02:51:41,418 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpd1i4hw0x
+2024-05-20 02:51:41,418 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpc99qn7dx
+2024-05-20 02:51:41,418 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbxwy94wq
+2024-05-20 02:51:41,418 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpyyf2tim4
+2024-05-20 02:51:41,418 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpfyjbqqtr
+2024-05-20 02:51:42,189 INFO    wandb-upload_32:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpe88we5jx
+2024-05-20 02:51:42,189 INFO    wandb-upload_14:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpnz6ab6_m
+2024-05-20 02:51:42,189 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4md5ll25
+2024-05-20 02:51:42,189 INFO    wandb-upload_33:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmph3n9pkxb
+2024-05-20 02:51:42,189 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0993tblw
+2024-05-20 02:51:42,189 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0od13aaz
+2024-05-20 02:51:42,189 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9uyoeygx
+2024-05-20 02:51:42,189 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbgu829jn
+2024-05-20 02:51:42,189 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpo2lodej9
+2024-05-20 02:51:42,189 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpq6maybk6
+2024-05-20 02:51:42,189 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpzaa_bzdc
+2024-05-20 02:51:42,189 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpll3_2gbu
+2024-05-20 02:51:42,189 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbyaz524b
+2024-05-20 02:51:42,189 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmph025a9ou
+2024-05-20 02:51:42,189 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmputk4ma44
+2024-05-20 02:51:42,189 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpc96qbf4o
+2024-05-20 02:51:42,189 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpid2xlwo_
+2024-05-20 02:51:42,189 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpilbjm5e3
+2024-05-20 02:51:42,189 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpot1yvs5l
+2024-05-20 02:51:42,189 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp54rovosv
+2024-05-20 02:51:42,189 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphjikzwvw
+2024-05-20 02:51:42,189 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp91xh87k7
+2024-05-20 02:51:42,189 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpe0z9zu4c
+2024-05-20 02:51:42,189 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjvc597h8
+2024-05-20 02:51:42,189 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpspfmdroi
+2024-05-20 02:51:42,189 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgqmn9vqm
+2024-05-20 02:51:42,189 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpt58qdexs
+2024-05-20 02:51:42,189 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxa_o4vny
+2024-05-20 02:51:42,189 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9jif7llr
+2024-05-20 02:51:42,189 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0xlh5j85
+2024-05-20 02:51:42,189 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpuksxcv9o
+2024-05-20 02:51:42,189 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpi1uwbci0
+2024-05-20 02:51:42,189 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9c533n8l
+2024-05-20 02:51:42,189 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpc__t0ex6
+2024-05-20 02:51:42,189 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpp168c9rh
+2024-05-20 02:51:42,189 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphl38bke2
+2024-05-20 02:51:42,189 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdkgd0meq
+2024-05-20 02:51:42,190 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_lhzzx2n
+2024-05-20 02:51:42,190 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcgcjo2y7
+2024-05-20 02:51:42,190 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp44ho80ow
+2024-05-20 02:51:42,190 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpw5cd1_j2
+2024-05-20 02:51:42,190 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmts134fk
+2024-05-20 02:51:42,190 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp152yrfhl
+2024-05-20 02:51:42,190 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2ud0dfn_
+2024-05-20 02:51:42,190 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxhchxod7
+2024-05-20 02:51:42,190 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjwiw88gp
+2024-05-20 02:51:42,190 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpe0znpw77
+2024-05-20 02:51:42,190 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpd34vyidc
+2024-05-20 02:51:42,190 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_12bg1n1
+2024-05-20 02:51:42,190 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpuewd828t
+2024-05-20 02:51:42,190 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpsddeyv6n
+2024-05-20 02:51:42,190 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjt1gmc8e
+2024-05-20 02:51:42,190 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpknywb1im
+2024-05-20 02:51:42,190 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4i6jlr91
+2024-05-20 02:51:42,190 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpg_2wnmsn
+2024-05-20 02:51:42,190 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprrn996zp
+2024-05-20 02:51:42,190 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpnnh5ztj3
+2024-05-20 02:51:42,190 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpx9xr3bin
+2024-05-20 02:51:42,190 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphzi2yptg
+2024-05-20 02:51:42,190 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpx29ddb7o
+2024-05-20 02:51:42,190 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp91bsh1x8
+2024-05-20 02:51:42,190 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpy03dl2i4
+2024-05-20 02:51:42,190 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4xe03s35
+2024-05-20 02:51:42,286 INFO    wandb-upload_48:360486 [upload_job.py:push():89] Uploaded file /home/anushka/.local/share/wandb/artifacts/staging/tmp0qbxt4pl
+2024-05-20 02:51:42,912 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:42,986 INFO    wandb-upload_32:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxgoyxtek
+2024-05-20 02:51:42,986 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp026kaaew
+2024-05-20 02:51:42,986 INFO    wandb-upload_14:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa9e3bk_1
+2024-05-20 02:51:42,986 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpiujodjom
+2024-05-20 02:51:42,986 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7ss75moe
+2024-05-20 02:51:42,986 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6zzgdekn
+2024-05-20 02:51:42,986 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpftum96th
+2024-05-20 02:51:42,986 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmph9lhmsun
+2024-05-20 02:51:42,986 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpeapgmnl2
+2024-05-20 02:51:42,986 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxi_vb7nl
+2024-05-20 02:51:42,986 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpr7a3bjl0
+2024-05-20 02:51:42,986 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpd_xvmja5
+2024-05-20 02:51:42,986 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp82hbclvo
+2024-05-20 02:51:42,986 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmps7to7sj3
+2024-05-20 02:51:42,986 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn5eeuxy4
+2024-05-20 02:51:42,986 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7fqk23n7
+2024-05-20 02:51:42,986 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpo1ms8nzq
+2024-05-20 02:51:42,986 INFO    wandb-upload_33:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp3h_5p1n0
+2024-05-20 02:51:42,986 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8nxh7_3d
+2024-05-20 02:51:42,986 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpihzy3hme
+2024-05-20 02:51:42,986 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6n250cs0
+2024-05-20 02:51:42,987 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpt2bx96ml
+2024-05-20 02:51:42,987 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpz3jn007g
+2024-05-20 02:51:42,987 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpz2p7nvu1
+2024-05-20 02:51:42,987 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbps8qjcw
+2024-05-20 02:51:42,987 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpy1sw4crt
+2024-05-20 02:51:42,987 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9_l8wfeu
+2024-05-20 02:51:42,987 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpi4eb1ryz
+2024-05-20 02:51:42,987 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpt0i72osa
+2024-05-20 02:51:42,987 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpoau4s8r4
+2024-05-20 02:51:42,987 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpqv9o2lry
+2024-05-20 02:51:42,987 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmgjono9l
+2024-05-20 02:51:42,987 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpt6dsln2_
+2024-05-20 02:51:42,987 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpksbuwutc
+2024-05-20 02:51:42,987 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpt5ipxjqx
+2024-05-20 02:51:42,987 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4rhbb6x9
+2024-05-20 02:51:42,987 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpen5lftz_
+2024-05-20 02:51:42,987 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpho_st85_
+2024-05-20 02:51:42,987 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp776emohf
+2024-05-20 02:51:42,987 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp5ottgtty
+2024-05-20 02:51:42,987 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9ngg3c3f
+2024-05-20 02:51:42,987 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp13iyhdz7
+2024-05-20 02:51:42,987 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpqedu_73o
+2024-05-20 02:51:42,987 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpf7egygxj
+2024-05-20 02:51:42,987 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp1j42p37u
+2024-05-20 02:51:42,987 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0hmua8rn
+2024-05-20 02:51:42,987 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp3hom_hbd
+2024-05-20 02:51:42,987 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp90ubbiyw
+2024-05-20 02:51:42,987 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgq435w5t
+2024-05-20 02:51:42,987 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6xar8axn
+2024-05-20 02:51:42,987 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn3rkbfue
+2024-05-20 02:51:42,987 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpyprac0sd
+2024-05-20 02:51:42,987 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdy9knx8y
+2024-05-20 02:51:42,987 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpo8jkgz6k
+2024-05-20 02:51:42,987 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpocjoo94m
+2024-05-20 02:51:42,987 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmptv4249et
+2024-05-20 02:51:42,987 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6fa308p4
+2024-05-20 02:51:42,987 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpeg_8aeg5
+2024-05-20 02:51:42,987 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprf0ltgs4
+2024-05-20 02:51:42,987 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8sf904ia
+2024-05-20 02:51:42,987 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_f55gfvu
+2024-05-20 02:51:42,987 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpabfoi0l_
+2024-05-20 02:51:42,987 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwivrnuaj
+2024-05-20 02:51:43,180 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-20 02:51:43,852 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_qkkf7xp
+2024-05-20 02:51:43,852 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjufs9z3n
+2024-05-20 02:51:43,852 INFO    wandb-upload_14:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp53coargn
+2024-05-20 02:51:43,852 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpzcd6ck1w
+2024-05-20 02:51:43,852 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmps5p558_m
+2024-05-20 02:51:43,852 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmps7mf9qpv
+2024-05-20 02:51:43,852 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6w86qx6z
+2024-05-20 02:51:43,852 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpunr5e41o
+2024-05-20 02:51:43,852 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0xcxpibx
+2024-05-20 02:51:43,852 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7yb5ququ
+2024-05-20 02:51:43,852 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpv5z66bsi
+2024-05-20 02:51:43,853 INFO    wandb-upload_48:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6jzs8d0v
+2024-05-20 02:51:43,853 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpc698oe7m
+2024-05-20 02:51:43,853 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp3spuqk6d
+2024-05-20 02:51:43,853 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpls84lro4
+2024-05-20 02:51:43,853 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmuqhfvu1
+2024-05-20 02:51:43,853 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpo6fe_9js
+2024-05-20 02:51:43,853 INFO    wandb-upload_32:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpp9r_76oz
+2024-05-20 02:51:43,853 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplekic9n5
+2024-05-20 02:51:43,853 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp16o2a_0n
+2024-05-20 02:51:43,853 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdpfswj0n
+2024-05-20 02:51:43,853 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdsmm3yxr
+2024-05-20 02:51:43,853 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpx00k73ws
+2024-05-20 02:51:43,853 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpar48c1hh
+2024-05-20 02:51:43,853 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmptekw8o23
+2024-05-20 02:51:43,853 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp92qqh5q3
+2024-05-20 02:51:43,853 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_et_f7yy
+2024-05-20 02:51:43,853 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpnopsvgc8
+2024-05-20 02:51:43,853 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpt9vt7v6m
+2024-05-20 02:51:43,853 INFO    wandb-upload_33:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpzkafi9v1
+2024-05-20 02:51:43,853 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpkrry80a8
+2024-05-20 02:51:43,854 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp16hxy0as
+2024-05-20 02:51:43,854 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8hsks_io
+2024-05-20 02:51:43,854 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpepl735n8
+2024-05-20 02:51:43,854 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpqnaz09wx
+2024-05-20 02:51:43,854 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpf0t7zdkl
+2024-05-20 02:51:43,854 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2fck1w1j
+2024-05-20 02:51:43,854 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxhnzs15e
+2024-05-20 02:51:43,854 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcu36u2eu
+2024-05-20 02:51:43,854 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpm2ywsrep
+2024-05-20 02:51:43,854 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpi1v50hyi
+2024-05-20 02:51:43,854 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpae1qtew1
+2024-05-20 02:51:43,854 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpldg6ioqx
+2024-05-20 02:51:43,854 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa0zyp06t
+2024-05-20 02:51:43,854 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpvmh7aioy
+2024-05-20 02:51:43,854 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpkvx9gi_r
+2024-05-20 02:51:43,854 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplel4umuh
+2024-05-20 02:51:43,854 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_1880kcb
+2024-05-20 02:51:43,854 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmppbe2ddws
+2024-05-20 02:51:43,854 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpp0hagenm
+2024-05-20 02:51:43,854 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp1k9394hj
+2024-05-20 02:51:43,854 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp368ymwu6
+2024-05-20 02:51:43,854 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmltkoteb
+2024-05-20 02:51:43,854 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp5yfhvppc
+2024-05-20 02:51:43,854 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgs89_x_b
+2024-05-20 02:51:43,854 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpfcwai7zj
+2024-05-20 02:51:43,854 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprt4t092i
+2024-05-20 02:51:43,854 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpf8iynwj3
+2024-05-20 02:51:43,854 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8gym1jb1
+2024-05-20 02:51:43,854 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpsupkni1g
+2024-05-20 02:51:43,854 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp8se86dbx
+2024-05-20 02:51:43,854 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4xiqkrp4
+2024-05-20 02:51:43,854 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcy179nfx
+2024-05-20 02:51:43,854 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9anmetae
+2024-05-20 02:51:44,622 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpl9akg7qy
+2024-05-20 02:51:44,622 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp5aoeb88i
+2024-05-20 02:51:44,622 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_du6q4zq
+2024-05-20 02:51:44,622 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpp_yhgvge
+2024-05-20 02:51:44,622 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpts5wj63w
+2024-05-20 02:51:44,622 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0vjmuqeo
+2024-05-20 02:51:44,622 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk4lqlhp8
+2024-05-20 02:51:44,622 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6gboj82w
+2024-05-20 02:51:44,622 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2p59iuga
+2024-05-20 02:51:44,622 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpm1svftkv
+2024-05-20 02:51:44,622 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpquq36g0e
+2024-05-20 02:51:44,622 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6wo7nvtd
+2024-05-20 02:51:44,622 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6kkakx1m
+2024-05-20 02:51:44,622 INFO    wandb-upload_32:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk5fddwae
+2024-05-20 02:51:44,622 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpps6z8qk9
+2024-05-20 02:51:44,622 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp52nwutpd
+2024-05-20 02:51:44,622 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpg8gjd03y
+2024-05-20 02:51:44,622 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp302bck3j
+2024-05-20 02:51:44,622 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp5n1ikxh6
+2024-05-20 02:51:44,622 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgquc7r5f
+2024-05-20 02:51:44,622 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmptyswo6jg
+2024-05-20 02:51:44,622 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpljf2d4et
+2024-05-20 02:51:44,622 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmppvtx5n1n
+2024-05-20 02:51:44,622 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpu_s7s4lh
+2024-05-20 02:51:44,622 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpodp6e9_6
+2024-05-20 02:51:44,622 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0fxo5n63
+2024-05-20 02:51:44,622 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9edt7a52
+2024-05-20 02:51:44,623 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprtz2nxf6
+2024-05-20 02:51:44,623 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp5fq3u7sl
+2024-05-20 02:51:44,623 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpkas66avj
+2024-05-20 02:51:44,623 INFO    wandb-upload_33:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphdi6l6h3
+2024-05-20 02:51:44,623 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpvfw0lnhw
+2024-05-20 02:51:44,623 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpm3ea829v
+2024-05-20 02:51:44,623 INFO    wandb-upload_48:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpog4fatgy
+2024-05-20 02:51:44,623 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpr2i3logx
+2024-05-20 02:51:44,623 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdwjawmyo
+2024-05-20 02:51:44,623 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpu7opuj5b
+2024-05-20 02:51:44,623 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcw0q73xk
+2024-05-20 02:51:44,623 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpc_oo2wyf
+2024-05-20 02:51:44,623 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7dzuz5jd
+2024-05-20 02:51:44,623 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmptzz4xw2g
+2024-05-20 02:51:44,623 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmz61akfm
+2024-05-20 02:51:44,623 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpb9he1ory
+2024-05-20 02:51:44,623 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjtv8j06o
+2024-05-20 02:51:44,623 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjdbzypcp
+2024-05-20 02:51:44,623 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7a9uqajp
+2024-05-20 02:51:44,623 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpajur0x2a
+2024-05-20 02:51:44,623 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0f5k6v3r
+2024-05-20 02:51:44,623 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9l0uvp2y
+2024-05-20 02:51:44,623 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpco9c9wqi
+2024-05-20 02:51:44,623 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp__fuzwql
+2024-05-20 02:51:44,623 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa_7w5tpu
+2024-05-20 02:51:44,623 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphcw75nq4
+2024-05-20 02:51:44,623 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpsaejh1wv
+2024-05-20 02:51:44,623 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_tdwzt39
+2024-05-20 02:51:44,623 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcd_g8pe9
+2024-05-20 02:51:44,623 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpv_mgbofo
+2024-05-20 02:51:44,623 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpr8pfjqvk
+2024-05-20 02:51:44,623 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpvu0tlaxy
+2024-05-20 02:51:44,623 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0cbixumk
+2024-05-20 02:51:44,623 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpx278qkuf
+2024-05-20 02:51:44,623 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp32kg9gol
+2024-05-20 02:51:44,623 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpue8_64na
+2024-05-20 02:51:44,623 INFO    wandb-upload_14:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprnbnj49k
+2024-05-20 02:51:45,469 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpagxwio1z
+2024-05-20 02:51:45,470 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphygcyzge
+2024-05-20 02:51:45,469 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplosr270f
+2024-05-20 02:51:45,469 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpfk3avy6i
+2024-05-20 02:51:45,469 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk3j7jgve
+2024-05-20 02:51:45,469 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjs8p4p7r
+2024-05-20 02:51:45,469 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmotwtg_j
+2024-05-20 02:51:45,469 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpqhrc78wx
+2024-05-20 02:51:45,469 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpkuxblxfk
+2024-05-20 02:51:45,469 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpmffuw3cy
+2024-05-20 02:51:45,469 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmps047myjp
+2024-05-20 02:51:45,469 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpybs4ctb4
+2024-05-20 02:51:45,469 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbactb2fh
+2024-05-20 02:51:45,469 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpinyj6lgh
+2024-05-20 02:51:45,469 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpp6g_osbv
+2024-05-20 02:51:45,469 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphc0snjcu
+2024-05-20 02:51:45,469 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwt8ne2p6
+2024-05-20 02:51:45,469 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp56_896qf
+2024-05-20 02:51:45,469 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcigrg0k3
+2024-05-20 02:51:45,469 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpb3wr4s9e
+2024-05-20 02:51:45,469 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpye5rvc_j
+2024-05-20 02:51:45,469 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpprta7mw_
+2024-05-20 02:51:45,470 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk52_nj13
+2024-05-20 02:51:45,470 INFO    wandb-upload_32:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2plvvgif
+2024-05-20 02:51:45,470 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn7f0h2kb
+2024-05-20 02:51:45,470 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp900qvgac
+2024-05-20 02:51:45,470 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdawtyqmp
+2024-05-20 02:51:45,470 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_mt7b_lq
+2024-05-20 02:51:45,470 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp885i8q9a
+2024-05-20 02:51:45,470 INFO    wandb-upload_48:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp68wa8c0p
+2024-05-20 02:51:45,470 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp57c97c8y
+2024-05-20 02:51:45,470 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk395hksz
+2024-05-20 02:51:45,470 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpo_eg8ee9
+2024-05-20 02:51:45,470 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn261eeig
+2024-05-20 02:51:45,470 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2_j_ec2c
+2024-05-20 02:51:45,470 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpyxkhgevy
+2024-05-20 02:51:45,470 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpm0avxdzy
+2024-05-20 02:51:45,470 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpvrsfs1_1
+2024-05-20 02:51:45,470 INFO    wandb-upload_33:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9lauexml
+2024-05-20 02:51:45,470 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp1kovines
+2024-05-20 02:51:45,470 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprr4dxejh
+2024-05-20 02:51:45,470 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgs6k5_87
+2024-05-20 02:51:45,470 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwygm_bks
+2024-05-20 02:51:45,470 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpw846ac66
+2024-05-20 02:51:45,470 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn7eqihgu
+2024-05-20 02:51:45,470 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2e5ro9ms
+2024-05-20 02:51:45,470 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprlsm0j0w
+2024-05-20 02:51:45,470 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpibdbsbn8
+2024-05-20 02:51:45,470 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpak76v6t5
+2024-05-20 02:51:45,470 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjr8jhjga
+2024-05-20 02:51:45,470 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpbuktwiyu
+2024-05-20 02:51:45,470 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpevd7bob8
+2024-05-20 02:51:45,470 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpf8fxidkg
+2024-05-20 02:51:45,470 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxgw625zd
+2024-05-20 02:51:45,470 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpewt3apef
+2024-05-20 02:51:45,470 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmppugyo__e
+2024-05-20 02:51:45,470 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpll4dewe_
+2024-05-20 02:51:45,470 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp484kx2uv
+2024-05-20 02:51:45,470 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2w_qfv_y
+2024-05-20 02:51:45,470 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplgajubd_
+2024-05-20 02:51:45,470 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphdwue6jj
+2024-05-20 02:51:45,470 INFO    wandb-upload_14:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2ix7pkut
+2024-05-20 02:51:45,470 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa32jgx_w
+2024-05-20 02:51:45,469 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2m1k7edz
+2024-05-20 02:51:46,246 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpz6c0j1px
+2024-05-20 02:51:46,246 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp368f6p95
+2024-05-20 02:51:46,246 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpz759h2zw
+2024-05-20 02:51:46,246 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk3b8xi3f
+2024-05-20 02:51:46,246 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp1cfquzei
+2024-05-20 02:51:46,246 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpj23sp2se
+2024-05-20 02:51:46,246 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjsh5u1cs
+2024-05-20 02:51:46,246 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp1y7uvjx6
+2024-05-20 02:51:46,246 INFO    wandb-upload_2:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmph614e0hr
+2024-05-20 02:51:46,246 INFO    wandb-upload_23:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp_two0snr
+2024-05-20 02:51:46,246 INFO    wandb-upload_22:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphkltx0e9
+2024-05-20 02:51:46,246 INFO    wandb-upload_51:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7mv9mfd1
+2024-05-20 02:51:46,246 INFO    wandb-upload_20:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpqp8h__d3
+2024-05-20 02:51:46,246 INFO    wandb-upload_0:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpa7h7lvvq
+2024-05-20 02:51:46,246 INFO    wandb-upload_58:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpacuf_dyh
+2024-05-20 02:51:46,246 INFO    wandb-upload_62:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpnxh9ws_n
+2024-05-20 02:51:46,246 INFO    wandb-upload_16:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7y5zvo1a
+2024-05-20 02:51:46,246 INFO    wandb-upload_44:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpcsyyvebb
+2024-05-20 02:51:46,246 INFO    wandb-upload_63:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmppzj0s4j1
+2024-05-20 02:51:46,246 INFO    wandb-upload_30:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwtbcbmv8
+2024-05-20 02:51:46,246 INFO    wandb-upload_13:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgf05u3d8
+2024-05-20 02:51:46,246 INFO    wandb-upload_32:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7tb24skn
+2024-05-20 02:51:46,246 INFO    wandb-upload_10:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpk3k50b47
+2024-05-20 02:51:46,246 INFO    wandb-upload_41:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp6xzspxyg
+2024-05-20 02:51:46,246 INFO    wandb-upload_35:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdgabw3h1
+2024-05-20 02:51:46,246 INFO    wandb-upload_40:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpfx6n1xvy
+2024-05-20 02:51:46,246 INFO    wandb-upload_26:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpjheqs8gq
+2024-05-20 02:51:46,246 INFO    wandb-upload_54:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpc3klsc00
+2024-05-20 02:51:46,246 INFO    wandb-upload_48:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpf8vdogsq
+2024-05-20 02:51:46,246 INFO    wandb-upload_17:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpfgpwovxv
+2024-05-20 02:51:46,246 INFO    wandb-upload_57:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4i23pljp
+2024-05-20 02:51:46,246 INFO    wandb-upload_46:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmph6qqob0i
+2024-05-20 02:51:46,246 INFO    wandb-upload_21:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpxxndyaz0
+2024-05-20 02:51:46,247 INFO    wandb-upload_60:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp66iihro_
+2024-05-20 02:51:46,247 INFO    wandb-upload_36:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpsbd13zuo
+2024-05-20 02:51:46,247 INFO    wandb-upload_4:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpl5zsniij
+2024-05-20 02:51:46,247 INFO    wandb-upload_27:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp94trxosz
+2024-05-20 02:51:46,247 INFO    wandb-upload_33:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp3d9rjmxp
+2024-05-20 02:51:46,247 INFO    wandb-upload_29:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmplojtq01c
+2024-05-20 02:51:46,247 INFO    wandb-upload_55:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpnh4fnwkx
+2024-05-20 02:51:46,247 INFO    wandb-upload_56:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpy6gm16sn
+2024-05-20 02:51:46,247 INFO    wandb-upload_42:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmptwvgw7m_
+2024-05-20 02:51:46,247 INFO    wandb-upload_45:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpe4igppu_
+2024-05-20 02:51:46,247 INFO    wandb-upload_11:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp7zwfqasv
+2024-05-20 02:51:46,247 INFO    wandb-upload_5:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpad9hhibc
+2024-05-20 02:51:46,247 INFO    wandb-upload_18:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpm1mxl_zj
+2024-05-20 02:51:46,247 INFO    wandb-upload_1:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpki97lczb
+2024-05-20 02:51:46,247 INFO    wandb-upload_49:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp2_tzs5xl
+2024-05-20 02:51:46,247 INFO    wandb-upload_37:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmphmqup2rz
+2024-05-20 02:51:46,247 INFO    wandb-upload_34:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4j9j83d8
+2024-05-20 02:51:46,247 INFO    wandb-upload_39:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpb61pju2l
+2024-05-20 02:51:46,247 INFO    wandb-upload_31:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmprf2wphc6
+2024-05-20 02:51:46,247 INFO    wandb-upload_7:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0ory7m_x
+2024-05-20 02:51:46,247 INFO    wandb-upload_12:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpz0zgggby
+2024-05-20 02:51:46,247 INFO    wandb-upload_61:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpfgld55sg
+2024-05-20 02:51:46,247 INFO    wandb-upload_59:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp41qzsyw9
+2024-05-20 02:51:46,247 INFO    wandb-upload_15:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpgnvcj6zu
+2024-05-20 02:51:46,247 INFO    wandb-upload_8:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpe0a976ng
+2024-05-20 02:51:46,247 INFO    wandb-upload_53:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmppit8rnce
+2024-05-20 02:51:46,247 INFO    wandb-upload_3:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp4fb0kddp
+2024-05-20 02:51:46,247 INFO    wandb-upload_19:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpz9287wzj
+2024-05-20 02:51:46,247 INFO    wandb-upload_14:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn6m239eo
+2024-05-20 02:51:46,247 INFO    wandb-upload_43:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp9tda2858
+2024-05-20 02:51:46,247 INFO    wandb-upload_52:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpdw4ph9ek
+2024-05-20 02:51:46,900 INFO    wandb-upload_47:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpltwshj4y
+2024-05-20 02:51:46,900 INFO    wandb-upload_9:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmps7ld1gm0
+2024-05-20 02:51:46,900 INFO    wandb-upload_50:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpihs86npl
+2024-05-20 02:51:46,900 INFO    wandb-upload_28:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp0txqdp_v
+2024-05-20 02:51:46,900 INFO    wandb-upload_38:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpwcuedlg_
+2024-05-20 02:51:46,900 INFO    wandb-upload_25:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpn8hmbnq_
+2024-05-20 02:51:46,900 INFO    wandb-upload_6:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmp132stmmu
+2024-05-20 02:51:46,901 INFO    wandb-upload_24:360486 [upload_job.py:push():86] Skipped uploading /home/anushka/.local/share/wandb/artifacts/staging/tmpaeg_k0zo
+2024-05-20 02:51:48,181 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-20 02:51:48,514 INFO    SenderThread:360486 [sender.py:send_request_log_artifact():1456] logged artifact run-gos28hf1-PredictionTable - {'id': 'QXJ0aWZhY3Q6ODQyNjk4NzYz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3Njg2MTYyNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODQyNjk4NjAw', 'versionIndex': 0}}}
+2024-05-20 02:51:48,519 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 02:51:48,879 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:48,879 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/table/Prediction Table_10_da8de4bb4a3045c976e2.table.json with policy now
+2024-05-20 02:51:48,880 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,880 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,882 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,883 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,883 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,887 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,887 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,887 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,888 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,888 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:48,888 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/images/Confusion Matrix Plot_13_a74577fd38c30cb63614.png with policy now
+2024-05-20 02:51:48,889 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,889 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,889 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,889 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,889 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,891 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,891 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,892 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,892 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,892 DEBUG   SenderThread:360486 [sender.py:send():379] send: files
+2024-05-20 02:51:48,892 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file media/images/Sanity checks plot_16_26b11066db0129e82e45.png with policy now
+2024-05-20 02:51:48,892 DEBUG   SenderThread:360486 [sender.py:send():379] send: history
+2024-05-20 02:51:48,892 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: summary_record
+2024-05-20 02:51:48,892 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,893 DEBUG   SenderThread:360486 [sender.py:send():379] send: exit
+2024-05-20 02:51:48,893 INFO    SenderThread:360486 [sender.py:send_exit():586] handling exit code: 1
+2024-05-20 02:51:48,893 INFO    SenderThread:360486 [sender.py:send_exit():588] handling runtime: 9
+2024-05-20 02:51:48,893 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,894 INFO    SenderThread:360486 [sender.py:send_exit():594] send defer
+2024-05-20 02:51:48,894 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: poll_exit
+2024-05-20 02:51:48,894 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,895 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-20 02:51:48,895 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,895 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-20 02:51:48,895 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 1
+2024-05-20 02:51:48,895 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,895 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-20 02:51:48,895 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,895 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-20 02:51:48,895 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 2
+2024-05-20 02:51:48,895 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,895 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-20 02:51:48,895 INFO    HandlerThread:360486 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-20 02:51:48,895 DEBUG   SystemMonitor:360486 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-20 02:51:48,895 DEBUG   SystemMonitor:360486 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-20 02:51:48,895 INFO    HandlerThread:360486 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-20 02:51:48,895 DEBUG   SystemMonitor:360486 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-20 02:51:48,896 INFO    HandlerThread:360486 [interfaces.py:finish():202] Joined disk monitor
+2024-05-20 02:51:48,896 INFO    HandlerThread:360486 [interfaces.py:finish():202] Joined memory monitor
+2024-05-20 02:51:48,896 INFO    HandlerThread:360486 [interfaces.py:finish():202] Joined network monitor
+2024-05-20 02:51:48,896 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,896 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-20 02:51:48,896 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 3
+2024-05-20 02:51:48,896 DEBUG   SenderThread:360486 [sender.py:send():379] send: stats
+2024-05-20 02:51:48,896 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,896 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-20 02:51:48,896 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,896 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-20 02:51:48,896 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 4
+2024-05-20 02:51:48,896 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,896 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-20 02:51:48,897 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,897 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-20 02:51:48,897 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 5
+2024-05-20 02:51:48,897 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,897 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-20 02:51:48,897 DEBUG   SenderThread:360486 [sender.py:send():379] send: summary
+2024-05-20 02:51:48,897 INFO    SenderThread:360486 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-20 02:51:48,897 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,897 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-20 02:51:48,897 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 6
+2024-05-20 02:51:48,897 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,897 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-20 02:51:48,897 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,897 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-20 02:51:48,898 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 7
+2024-05-20 02:51:48,898 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 02:51:48,898 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:48,898 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-20 02:51:48,898 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:48,898 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-20 02:51:48,914 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-summary.json
+2024-05-20 02:51:48,914 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/config.yaml
+2024-05-20 02:51:49,182 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 02:51:49,641 INFO    wandb-upload_2:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/5fmsfkee-media/table/Prediction Table_10_da8de4bb4a3045c976e2.table.json
+2024-05-20 02:51:49,687 INFO    wandb-upload_20:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/3qq2adw7-media/images/Sanity checks plot_16_26b11066db0129e82e45.png
+2024-05-20 02:51:50,796 INFO    wandb-upload_22:360486 [upload_job.py:push():131] Uploaded file /tmp/tmpcpe7lyerwandb/fqbc3ann-media/images/Confusion Matrix Plot_13_a74577fd38c30cb63614.png
+2024-05-20 02:51:50,915 INFO    Thread-12 :360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:51,984 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 8
+2024-05-20 02:51:51,984 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: poll_exit
+2024-05-20 02:51:51,984 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:51,985 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-20 02:51:51,986 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:51,986 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-20 02:51:51,986 INFO    SenderThread:360486 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-20 02:51:51,987 INFO    SenderThread:360486 [job_builder.py:_get_source_type():466] no source found
+2024-05-20 02:51:51,987 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 9
+2024-05-20 02:51:51,987 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:51,987 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-20 02:51:51,988 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:51,988 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-20 02:51:51,988 INFO    SenderThread:360486 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-20 02:51:52,184 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 02:51:52,916 INFO    SenderThread:360486 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:52,917 INFO    SenderThread:360486 [dir_watcher.py:finish():388] scan: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files
+2024-05-20 02:51:52,918 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/conda-environment.yaml conda-environment.yaml
+2024-05-20 02:51:52,918 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-summary.json wandb-summary.json
+2024-05-20 02:51:52,918 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log output.log
+2024-05-20 02:51:52,919 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/requirements.txt requirements.txt
+2024-05-20 02:51:52,922 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-metadata.json wandb-metadata.json
+2024-05-20 02:51:52,922 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/config.yaml config.yaml
+2024-05-20 02:51:52,930 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/table/Prediction Table_10_da8de4bb4a3045c976e2.table.json media/table/Prediction Table_10_da8de4bb4a3045c976e2.table.json
+2024-05-20 02:51:52,930 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/table/Prediction Table_3_60d0b63d5fe417622be7.table.json media/table/Prediction Table_3_60d0b63d5fe417622be7.table.json
+2024-05-20 02:51:52,931 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Sanity checks plot_2_26b11066db0129e82e45.png media/images/Sanity checks plot_2_26b11066db0129e82e45.png
+2024-05-20 02:51:52,931 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Sanity checks plot_16_26b11066db0129e82e45.png media/images/Sanity checks plot_16_26b11066db0129e82e45.png
+2024-05-20 02:51:52,931 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Confusion Matrix Plot_6_53657a4f54e097b84016.png media/images/Confusion Matrix Plot_6_53657a4f54e097b84016.png
+2024-05-20 02:51:52,931 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Confusion Matrix Plot_13_a74577fd38c30cb63614.png media/images/Confusion Matrix Plot_13_a74577fd38c30cb63614.png
+2024-05-20 02:51:52,931 INFO    SenderThread:360486 [dir_watcher.py:finish():402] scan save: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/media/images/Sanity checks plot_9_26b11066db0129e82e45.png media/images/Sanity checks plot_9_26b11066db0129e82e45.png
+2024-05-20 02:51:52,931 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 10
+2024-05-20 02:51:52,931 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: poll_exit
+2024-05-20 02:51:52,932 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:52,932 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-20 02:51:52,932 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:52,932 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-20 02:51:52,932 INFO    SenderThread:360486 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-20 02:51:53,185 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 02:51:53,185 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: poll_exit
+2024-05-20 02:51:53,544 INFO    wandb-upload_58:360486 [upload_job.py:push():131] Uploaded file /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/wandb-summary.json
+2024-05-20 02:51:53,560 INFO    wandb-upload_63:360486 [upload_job.py:push():131] Uploaded file /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/config.yaml
+2024-05-20 02:51:53,576 INFO    wandb-upload_16:360486 [upload_job.py:push():131] Uploaded file /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/output.log
+2024-05-20 02:51:53,601 INFO    wandb-upload_44:360486 [upload_job.py:push():131] Uploaded file /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/files/requirements.txt
+2024-05-20 02:51:53,802 INFO    Thread-11 (_thread_body):360486 [sender.py:transition_state():614] send defer: 11
+2024-05-20 02:51:53,803 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:53,803 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-20 02:51:53,804 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:53,804 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-20 02:51:53,804 INFO    SenderThread:360486 [file_pusher.py:join():178] waiting for file pusher
+2024-05-20 02:51:53,810 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 12
+2024-05-20 02:51:53,810 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:53,810 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-20 02:51:53,811 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:53,811 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-20 02:51:53,811 INFO    SenderThread:360486 [file_stream.py:finish():614] file stream finish called
+2024-05-20 02:51:54,120 INFO    SenderThread:360486 [file_stream.py:finish():618] file stream finish is done
+2024-05-20 02:51:54,120 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 13
+2024-05-20 02:51:54,120 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:54,120 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-20 02:51:54,120 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 02:51:54,120 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:54,120 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-20 02:51:54,120 INFO    SenderThread:360486 [sender.py:transition_state():614] send defer: 14
+2024-05-20 02:51:54,120 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 02:51:54,121 INFO    HandlerThread:360486 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-20 02:51:54,121 DEBUG   SenderThread:360486 [sender.py:send():379] send: final
+2024-05-20 02:51:54,121 DEBUG   SenderThread:360486 [sender.py:send():379] send: footer
+2024-05-20 02:51:54,121 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: defer
+2024-05-20 02:51:54,121 INFO    SenderThread:360486 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-20 02:51:54,121 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 02:51:54,121 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: poll_exit
+2024-05-20 02:51:54,121 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 02:51:54,122 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: poll_exit
+2024-05-20 02:51:54,122 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: server_info
+2024-05-20 02:51:54,122 DEBUG   SenderThread:360486 [sender.py:send_request():406] send_request: server_info
+2024-05-20 02:51:54,123 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-20 02:51:54,123 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-20 02:51:54,124 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-20 02:51:54,391 INFO    MainThread:360486 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-05-20 02:51:54,392 INFO    MainThread:360486 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-05-20 02:51:54,392 INFO    MainThread:360486 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-05-20 02:51:54,392 DEBUG   HandlerThread:360486 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-20 02:51:54,392 INFO    HandlerThread:360486 [handler.py:finish():866] shutting down handler
+2024-05-20 02:51:55,122 INFO    WriterThread:360486 [datastore.py:close():296] close: /home/anushka/Desktop/take_home/task_1/mlops_env/wandb/run-20240520_025115-gos28hf1/run-gos28hf1.wandb
+2024-05-20 02:51:55,391 INFO    SenderThread:360486 [sender.py:finish():1546] shutting down sender
+2024-05-20 02:51:55,391 INFO    SenderThread:360486 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-20 02:51:55,391 INFO    SenderThread:360486 [file_pusher.py:join():178] waiting for file pusher

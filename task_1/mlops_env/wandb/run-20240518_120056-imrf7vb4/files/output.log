@@ -1,0 +1,40 @@
+[32m[I 2024-05-18 12:00:58,566][39m A new study created in memory with name: no-name-8b8b004d-3fd8-46b0-8b21-c2409856806f
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[33m[W 2024-05-18 12:01:00,939][39m Trial 0 failed with parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.7065577918000595, 'fit_intercept': False, 'intercept_scaling': 0.4993627090159378, 'l1_ratio': 0.8386326238171316} because of the following error: TypeError("'float' object cannot be interpreted as an integer").
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 178, in objective
+    _, balanced_accuracy, _, _ = evaluate_model(
+                                 ^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 124, in evaluate_model
+    for i in range(score):
+             ^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer
+[33m[W 2024-05-18 12:01:00,940][39m Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 197, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 189, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 178, in objective
+    _, balanced_accuracy, _, _ = evaluate_model(
+                                 ^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 124, in evaluate_model
+    for i in range(score):
+             ^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer

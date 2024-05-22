@@ -1,0 +1,8 @@
+[32m[I 2024-05-02 16:16:33,374][39m A new study created in memory with name: no-name-0a23d3fe-1699-4031-951a-6077f8852cc0
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 174, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 166, in main
+    study.optimize(objective, n_trials=5)
+                   ^^^^^^^^^
+NameError: name 'objective' is not defined. Did you mean: 'object'?

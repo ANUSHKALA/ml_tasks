@@ -1,0 +1,67 @@
+
+[32m[I 2024-05-07 13:52:22,366][39m A new study created in memory with name: no-name-11d88b77-1506-4f41-8f64-6c5b89295ca0
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[33m[W 2024-05-07 13:52:25,191][39m Trial 0 failed with parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.8532513765246655, 'fit_intercept': True, 'intercept_scaling': 0.8454921803620512, 'l1_ratio': 0.6363096076771523} because of the following error: OSError('cannot write mode F as PNG').
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/PIL/PngImagePlugin.py", line 1289, in _save
+    rawmode, mode = _OUTMODES[mode]
+                    ~~~~~~~~~^^^^^^
+KeyError: 'F'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 167, in objective
+    visualize_test(x_test, y_test, predictions)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 105, in visualize_test
+    table.add_data(wandb.Image(image), label, prediction)
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/wandb/sdk/data_types/image.py", line 179, in __init__
+    self._initialize_from_data(data_or_path, mode, file_type)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/wandb/sdk/data_types/image.py", line 336, in _initialize_from_data
+    self._image.save(tmp_path, transparency=None)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/PIL/Image.py", line 2459, in save
+    save_handler(self, fp, filename)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/PIL/PngImagePlugin.py", line 1292, in _save
+    raise OSError(msg) from e
+OSError: cannot write mode F as PNG
+[33m[W 2024-05-07 13:52:25,196][39m Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/PIL/PngImagePlugin.py", line 1289, in _save
+    rawmode, mode = _OUTMODES[mode]
+                    ~~~~~~~~~^^^^^^
+KeyError: 'F'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 188, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 180, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 167, in objective
+    visualize_test(x_test, y_test, predictions)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 105, in visualize_test
+    table.add_data(wandb.Image(image), label, prediction)
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/wandb/sdk/data_types/image.py", line 179, in __init__
+    self._initialize_from_data(data_or_path, mode, file_type)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/wandb/sdk/data_types/image.py", line 336, in _initialize_from_data
+    self._image.save(tmp_path, transparency=None)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/PIL/Image.py", line 2459, in save
+    save_handler(self, fp, filename)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/PIL/PngImagePlugin.py", line 1292, in _save
+    raise OSError(msg) from e
+OSError: cannot write mode F as PNG

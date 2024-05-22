@@ -1,0 +1,28 @@
+
+[32m[I 2024-05-20 19:06:14,081][39m A new study created in memory with name: no-name-fd5ca506-9925-4698-8562-3ac51267b764
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 19:06:17,083][39m Trial 0 finished with value: 0.9542006545319458 and parameters: {'penality': 'l2', 'solver_l2': 'lbfgs', 'inverse_of_regularization_strength': 0.6989835667430384, 'fit_intercept': False, 'intercept_scaling': 0.47684293718452364}. Best is trial 0 with value: 0.9542006545319458.
+score:  0.9533333333333334 balanced_acc:  0.9542006545319458 precision:  0.9546199638360893 recall:  0.9542006545319458
+(1797, 64)
+(1797,)
+score:  0.9555555555555556 balanced_acc:  0.956283987865279 precision:  0.9566340034945059 recall:  0.956283987865279
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 19:06:19,359][39m Trial 1 finished with value: 0.956283987865279 and parameters: {'penality': 'l2', 'solver_l2': 'lbfgs', 'inverse_of_regularization_strength': 0.46199632230878473, 'fit_intercept': False, 'intercept_scaling': 0.1693645146548795}. Best is trial 1 with value: 0.956283987865279.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+score:  0.9466666666666667 balanced_acc:  0.9475275404120233 precision:  0.9484382370456338 recall:  0.9475275404120233
+(1797, 64)
+(1797,)
+score:  0.9466666666666667 balanced_acc:  0.9475275404120233 precision:  0.9484382370456338 recall:  0.9475275404120233
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 19:06:21,858][39m Trial 2 finished with value: 0.9475275404120233 and parameters: {'penality': None, 'solver_None': 'newton-cg', 'inverse_of_regularization_strength': 0.38596024920950367, 'fit_intercept': True, 'intercept_scaling': 0.5382563215821807}. Best is trial 1 with value: 0.956283987865279.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+[32m[I 2024-05-20 19:06:24,173][39m Trial 3 finished with value: 0.9475275404120233 and parameters: {'penality': None, 'solver_None': 'newton-cg', 'inverse_of_regularization_strength': 0.20631643795396087, 'fit_intercept': True, 'intercept_scaling': 0.6380271283465755}. Best is trial 1 with value: 0.956283987865279.
+score:  0.9577777777777777 balanced_acc:  0.9585567151380063 precision:  0.958678273647547 recall:  0.9585567151380063
+Balanced Accuracy: 0.9585567151380063
+Best hyperparameters: {'penality': 'l2', 'solver_l2': 'saga', 'inverse_of_regularization_strength': 0.6186712249906794, 'fit_intercept': False, 'intercept_scaling': 0.32886941427879973}
+[32m[I 2024-05-20 19:06:34,968][39m Trial 4 finished with value: 0.9585567151380063 and parameters: {'penality': 'l2', 'solver_l2': 'saga', 'inverse_of_regularization_strength': 0.6186712249906794, 'fit_intercept': False, 'intercept_scaling': 0.32886941427879973}. Best is trial 4 with value: 0.9585567151380063.

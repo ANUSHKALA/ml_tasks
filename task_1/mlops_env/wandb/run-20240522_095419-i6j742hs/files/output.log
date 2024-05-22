@@ -1,0 +1,30 @@
+
+[32m[I 2024-05-22 09:54:21,407][39m A new study created in memory with name: no-name-67c0bbf3-bb9c-4cd7-a187-eefe6fc258ba
+(1797, 64)
+(1797,)
+score:  0.9555555555555556 balanced_acc:  0.9564733818046731 precision:  0.9566642339891305 recall:  0.9564733818046731
+(1797, 64)
+(1797,)
+[32m[I 2024-05-22 09:54:36,021][39m Trial 0 finished with value: 0.9564733818046731 and parameters: {'penality': 'l2', 'solver_l2': 'saga', 'inverse_of_regularization_strength': 0.9659383448635922, 'fit_intercept': False, 'intercept_scaling': 0.6351483620637051}. Best is trial 0 with value: 0.9564733818046731.
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+score:  0.9533333333333334 balanced_acc:  0.9542006545319458 precision:  0.9545886609833248 recall:  0.9542006545319458
+(1797, 64)
+(1797,)
+score:  0.9555555555555556 balanced_acc:  0.9564733818046731 precision:  0.9566642339891305 recall:  0.9564733818046731
+(1797, 64)
+(1797,)
+[32m[I 2024-05-22 09:54:46,532][39m Trial 1 finished with value: 0.9542006545319458 and parameters: {'penality': None, 'solver_None': 'sag', 'inverse_of_regularization_strength': 0.3462258018281935, 'fit_intercept': False, 'intercept_scaling': 0.34225903867016405}. Best is trial 0 with value: 0.9564733818046731.
+[32m[I 2024-05-22 09:54:57,832][39m Trial 2 finished with value: 0.9564733818046731 and parameters: {'penality': 'l2', 'solver_l2': 'saga', 'inverse_of_regularization_strength': 0.8191669144798547, 'fit_intercept': False, 'intercept_scaling': 0.9773039421117652}. Best is trial 0 with value: 0.9564733818046731.
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+[32m[I 2024-05-22 09:55:00,594][39m Trial 3 finished with value: 0.9527072753377801 and parameters: {'penality': None, 'solver_None': 'lbfgs', 'inverse_of_regularization_strength': 0.8653181669744382, 'fit_intercept': True, 'intercept_scaling': 0.49293741022847937}. Best is trial 0 with value: 0.9564733818046731.
+score:  0.9511111111111111 balanced_acc:  0.9527072753377801 precision:  0.9527056319408092 recall:  0.9527072753377801
+(1797, 64)
+(1797,)
+score:  0.9555555555555556 balanced_acc:  0.9565150903298054 precision:  0.9558362371612376 recall:  0.9565150903298054
+Balanced Accuracy: 0.9565150903298054
+Best hyperparameters: {'penality': 'l2', 'solver_l2': 'lbfgs', 'inverse_of_regularization_strength': 0.1047581128455625, 'fit_intercept': True, 'intercept_scaling': 0.5574777815540187}
+[32m[I 2024-05-22 09:55:03,645][39m Trial 4 finished with value: 0.9565150903298054 and parameters: {'penality': 'l2', 'solver_l2': 'lbfgs', 'inverse_of_regularization_strength': 0.1047581128455625, 'fit_intercept': True, 'intercept_scaling': 0.5574777815540187}. Best is trial 4 with value: 0.9565150903298054.

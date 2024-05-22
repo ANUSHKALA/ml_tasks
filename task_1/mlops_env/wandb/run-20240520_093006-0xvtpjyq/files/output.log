@@ -1,0 +1,39 @@
+
+[32m[I 2024-05-20 09:30:07,882][39m A new study created in memory with name: no-name-5c2e61c7-e917-49e2-9e88-eba0b273980f
+(1797, 64)
+(1797,)
+[33m[W 2024-05-20 09:30:10,959][39m Trial 0 failed with parameters: {'penality': 'l2', 'solver_l2': 'sag', 'inverse_of_regularization_strength': 0.982960476411855, 'fit_intercept': True, 'intercept_scaling': 0.6521734757669001} because of the following error: TypeError("fromarray() got an unexpected keyword argument 'model'").
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 189, in objective
+    visualize_test(x_test, y_test, predictions)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 130, in visualize_test
+    image = im.fromarray(image_array, model="L")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromarray() got an unexpected keyword argument 'model'
+[33m[W 2024-05-20 09:30:10,960][39m Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 210, in <module>
+    main()
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 202, in main
+    study.optimize(objective, n_trials=5)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 189, in objective
+    visualize_test(x_test, y_test, predictions)
+  File "/home/anushka/Desktop/take_home/task_1/mlops_env/mlops_task.py", line 130, in visualize_test
+    image = im.fromarray(image_array, model="L")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromarray() got an unexpected keyword argument 'model'

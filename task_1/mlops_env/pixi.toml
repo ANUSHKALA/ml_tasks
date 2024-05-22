@@ -1,0 +1,17 @@
+[project]
+name = "mlops_env"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["ANUSHKALA <anushkakaimal2003@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64", "osx-64"]
+
+[tasks]
+build = "python mlops_task.py"
+
+[dependencies]
+optuna = ">=3.6.0,<3.7"
+scikit-learn = ">=1.4.2,<1.5"
+matplotlib = ">=3.8.4,<3.9"
+wandb = ">=0.16.5,<0.17"
+pillow = ">=10.3.0,<10.4"

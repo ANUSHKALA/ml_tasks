@@ -1,0 +1,28 @@
+
+[32m[I 2024-05-20 18:19:31,522][39m A new study created in memory with name: no-name-ec54bc52-8e92-4094-bd4f-29033a650041
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 18:19:38,291][39m Trial 0 finished with value: 0.9585567151380063 and parameters: {'penality': 'l2', 'solver_l2': 'saga', 'inverse_of_regularization_strength': 0.1105291455526165, 'fit_intercept': False, 'intercept_scaling': 0.5814258389274705}. Best is trial 0 with value: 0.9585567151380063.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+score:  0.9577777777777777 balanced_acc:  0.9585567151380063 precision:  0.958705551334399 recall:  0.9585567151380063
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 18:19:52,597][39m Trial 1 finished with value: 0.9587546369588871 and parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.6937063232351824, 'fit_intercept': False, 'intercept_scaling': 0.8294805217715544, 'l1_ratio': 0.5262345430147333}. Best is trial 1 with value: 0.9587546369588871.
+score:  0.9577777777777777 balanced_acc:  0.9587546369588871 precision:  0.958408458335731 recall:  0.9587546369588871
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 18:19:54,812][39m Trial 2 finished with value: 0.956283987865279 and parameters: {'penality': 'l2', 'solver_l2': 'newton-cg', 'inverse_of_regularization_strength': 0.4576411590713515, 'fit_intercept': False, 'intercept_scaling': 0.24384861725791723}. Best is trial 1 with value: 0.9587546369588871.
+/home/anushka/Desktop/take_home/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+score:  0.9555555555555556 balanced_acc:  0.956283987865279 precision:  0.9566340034945059 recall:  0.956283987865279
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 18:19:57,037][39m Trial 3 finished with value: 0.9475275404120233 and parameters: {'penality': None, 'solver_None': 'newton-cg', 'inverse_of_regularization_strength': 0.36714719269214524, 'fit_intercept': True, 'intercept_scaling': 0.5283768314498363}. Best is trial 1 with value: 0.9587546369588871.
+score:  0.9466666666666667 balanced_acc:  0.9475275404120233 precision:  0.9484382370456338 recall:  0.9475275404120233
+(1797, 64)
+(1797,)
+[32m[I 2024-05-20 18:19:59,795][39m Trial 4 finished with value: 0.9477017456394197 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.8971934096817444, 'fit_intercept': True, 'intercept_scaling': 0.9996572824153797}. Best is trial 1 with value: 0.9587546369588871.
+score:  0.9466666666666667 balanced_acc:  0.9477017456394197 precision:  0.9476365143154629 recall:  0.9477017456394197
+Balanced Accuracy: 0.9587546369588871
+Best hyperparameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.6937063232351824, 'fit_intercept': False, 'intercept_scaling': 0.8294805217715544, 'l1_ratio': 0.5262345430147333}
