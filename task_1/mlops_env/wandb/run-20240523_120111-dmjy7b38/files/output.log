@@ -1,0 +1,36 @@
+
+[32m[I 2024-05-23 12:01:13,504][39m A new study created in memory with name: no-name-44916c43-380c-4e7b-b170-1035d26bf8ec
+(1797, 64)
+(1797,)
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+score:  0.9577777777777777 balanced_acc:  0.9586095692606278 precision:  0.9578393025029713 recall:  0.9586095692606278
+(1797, 64)
+(1797,)
+[32m[I 2024-05-23 12:01:21,964][39m Trial 0 finished with value: 0.9586095692606278 and parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.25380870837283215, 'fit_intercept': False, 'intercept_scaling': 0.9333474492178525, 'l1_ratio': 0.5885195468628525}. Best is trial 0 with value: 0.9586095692606278.
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[32m[I 2024-05-23 12:01:26,430][39m Trial 1 finished with value: 0.9564733818046731 and parameters: {'penality': None, 'solver_None': 'sag', 'inverse_of_regularization_strength': 0.19742979497275903, 'fit_intercept': True, 'intercept_scaling': 0.47947477538994765}. Best is trial 0 with value: 0.9586095692606278.
+score:  0.9555555555555556 balanced_acc:  0.9564733818046731 precision:  0.9566642339891305 recall:  0.9564733818046731
+(1797, 64)
+(1797,)
+score:  0.9577777777777777 balanced_acc:  0.9585567151380063 precision:  0.958705551334399 recall:  0.9585567151380063
+(1797, 64)
+(1797,)
+score:  0.9555555555555556 balanced_acc:  0.9564733818046731 precision:  0.9566642339891305 recall:  0.9564733818046731
+(1797, 64)
+(1797,)
+[32m[I 2024-05-23 12:01:30,784][39m Trial 2 finished with value: 0.9585567151380063 and parameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.11192676940292577, 'fit_intercept': True, 'intercept_scaling': 0.37222464501850305, 'l1_ratio': 0.02263138121006103}. Best is trial 0 with value: 0.9586095692606278.
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+[32m[I 2024-05-23 12:01:36,290][39m Trial 3 finished with value: 0.9564733818046731 and parameters: {'penality': None, 'solver_None': 'saga', 'inverse_of_regularization_strength': 0.1780964130693181, 'fit_intercept': False, 'intercept_scaling': 0.5310698404423783}. Best is trial 0 with value: 0.9586095692606278.
+/home/anushka/Desktop/take_home/ml_tasks/task_1/mlops_env/.pixi/envs/default/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1186: UserWarning: Setting penalty=None will ignore the C and l1_ratio parameters
+  warnings.warn(
+[32m[I 2024-05-23 12:01:37,779][39m Trial 4 finished with value: 0.950579615763312 and parameters: {'penality': None, 'solver_None': 'lbfgs', 'inverse_of_regularization_strength': 0.6181381688241377, 'fit_intercept': False, 'intercept_scaling': 0.4146994269906896}. Best is trial 0 with value: 0.9586095692606278.
+score:  0.9488888888888889 balanced_acc:  0.950579615763312 precision:  0.950286820938147 recall:  0.950579615763312
+Balanced Accuracy: 0.9586095692606278
+Best hyperparameters: {'penality': 'elasticnet', 'inverse_of_regularization_strength': 0.25380870837283215, 'fit_intercept': False, 'intercept_scaling': 0.9333474492178525, 'l1_ratio': 0.5885195468628525}
