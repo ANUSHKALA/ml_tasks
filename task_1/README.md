@@ -1,3 +1,5 @@
+## Instructions to replicate the results
+
 Step 1: Make sure you have pixi set up in your system, using
 
 ``` pixi ```
